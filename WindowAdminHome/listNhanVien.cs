@@ -56,6 +56,8 @@ namespace WindowAdminHome
             textSalary.Visible = false;
             textTenNV.Visible = false;
             textVaiTro.Visible = false;
+            //btNhanVien.Visible = false;
+            btNhanVien.Enabled = false;
             switch (role)
             {
                 case "NHANVIEN":
@@ -116,6 +118,8 @@ namespace WindowAdminHome
                     textPhuCap.Visible = true;
                     labelMaNV.Visible = true;
                     textMaNV.Visible=true;
+                    btNhanVien.Enabled = true;
+                    panelNhanVien.Visible = true;
                     //
                     break;
                 case "NHANSU":
@@ -145,6 +149,9 @@ namespace WindowAdminHome
                     textVaiTro.Visible = true;
                     textMaNQL.Visible = true;
                     textPhg.Visible = true;
+                    btNhanVien.Enabled = true;
+                    btNhanVien.Cursor = default;
+                    panelNhanVien.Visible = true;
                     //
                     //OPTION
                     btDelete.Visible = true;
@@ -167,6 +174,8 @@ namespace WindowAdminHome
                     // code here
                     datagrid = nhanvien;
                     tab = "OLS_TEST1.NHANVIEN";
+                    btMe.Enabled = false;
+                    panelMe.Visible = false;
                     break;
                 /*default:
                     // code here*/
@@ -176,8 +185,11 @@ namespace WindowAdminHome
         
         public void customDesign()
         {
-            panelNhanVien.Visible = true;
-            panelMe.Visible = false;
+            panelNhanVien.Visible = false;
+            btMe.BackColor = Color.White;
+            btMe.Enabled = true;
+            panelMe.Visible = true;
+            btNhanVien.Visible = true;
         }
         
         private void updateGrid()
@@ -221,7 +233,7 @@ namespace WindowAdminHome
                 getEmps.Parameters.Add("p_VAITRO", textVaiTro.Text);
                 getEmps.Parameters.Add("p_MANQL", textMaNQL.Text);
                 getEmps.Parameters.Add("p_PHG", textPhg.Text);
-                getEmps.Parameters.Add("TAB", tab);
+                //getEmps.Parameters.Add("TAB", tab);
                 getEmps.ExecuteNonQuery();
                 updateGrid();
                 MessageBox.Show("them thanh cong!");
@@ -334,6 +346,41 @@ namespace WindowAdminHome
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // code here
+                string[] listName = new string[] { "NGAYSINH", "DIACHI", "SODT" };
+                string[] listText = new string[] { textBirthMe.Text, textAddrMe.Text, textPhoneMe.Text };
+                if (this.conn.State == ConnectionState.Closed)
+                    conn.Open();
+                for (int i = 0; i < listText.Length; i++)
+                {
+                    if (this.conn.State == ConnectionState.Closed)
+                        conn.Open();
+                    if (listText[i] == "")
+                        continue;
+                    OracleCommand getEmps = conn.CreateCommand();
+                    getEmps.CommandText = "OLS_TEST1.PROC_UPDATE";
+                    getEmps.CommandType = CommandType.StoredProcedure;
+                    getEmps.Parameters.Add("COL", listName[i]);
+                    getEmps.Parameters.Add("VAL", listText[i]);
+                    getEmps.Parameters.Add("MA", username.Substring(2,4));//CHO ROLE KO PHAI LA NHANSU VA TAICHINH
+                    //getEmps.Parameters.Add("MA", textMaNV.Text);//CHO ROLE NHANSU VA TAICHINH
+                    getEmps.Parameters.Add("TAB", tab);
+                    getEmps.ExecuteNonQuery();
+                    MessageBox.Show("Cap nhat thanh cong!");
+                    updateGrid();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Thao tac khong hop le!" + ex.Message + datagrid);
+            }
         }
     }
 }

@@ -37,7 +37,6 @@ namespace WindowAdminHome
             this.btInsert = new System.Windows.Forms.Button();
             this.btUpdate = new System.Windows.Forms.Button();
             this.labelPhg = new System.Windows.Forms.Label();
-            this.textPhg = new System.Windows.Forms.TextBox();
             this.labelMaNQL = new System.Windows.Forms.Label();
             this.textMaNQL = new System.Windows.Forms.TextBox();
             this.labelMaNV = new System.Windows.Forms.Label();
@@ -59,45 +58,28 @@ namespace WindowAdminHome
             this.labelListStaff = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btNhanVien = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btMe = new System.Windows.Forms.Button();
             this.panelMe = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.labelPHGMe = new System.Windows.Forms.Label();
-            this.textPHGMe = new System.Windows.Forms.TextBox();
-            this.labelMaBQLMe = new System.Windows.Forms.Label();
-            this.textNQLMe = new System.Windows.Forms.TextBox();
-            this.labelMaNVMe = new System.Windows.Forms.Label();
-            this.labelVaiTroMe = new System.Windows.Forms.Label();
-            this.textMaNVMe = new System.Windows.Forms.TextBox();
-            this.textvaiTroMe = new System.Windows.Forms.TextBox();
-            this.textTenNVMe = new System.Windows.Forms.TextBox();
-            this.labelPhuCapMe = new System.Windows.Forms.Label();
-            this.labelTenNVMe = new System.Windows.Forms.Label();
-            this.textPhuCapMe = new System.Windows.Forms.TextBox();
-            this.textSexMe = new System.Windows.Forms.TextBox();
-            this.labelSalaryMe = new System.Windows.Forms.Label();
-            this.labelSexMe = new System.Windows.Forms.Label();
-            this.textSalaryMe = new System.Windows.Forms.TextBox();
             this.textBirthMe = new System.Windows.Forms.TextBox();
             this.labelPhoneMe = new System.Windows.Forms.Label();
             this.labelBirthMe = new System.Windows.Forms.Label();
             this.textPhoneMe = new System.Windows.Forms.TextBox();
             this.textAddrMe = new System.Windows.Forms.TextBox();
             this.labelAddrMe = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.btMe = new System.Windows.Forms.Button();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btNhanVien = new System.Windows.Forms.Button();
+            this.textPhg = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Priv_List)).BeginInit();
             this.panelNhanVien.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panelMe.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // Priv_List
@@ -136,11 +118,11 @@ namespace WindowAdminHome
             // panelNhanVien
             // 
             this.panelNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelNhanVien.Controls.Add(this.textPhg);
             this.panelNhanVien.Controls.Add(this.btDelete);
             this.panelNhanVien.Controls.Add(this.btInsert);
             this.panelNhanVien.Controls.Add(this.btUpdate);
             this.panelNhanVien.Controls.Add(this.labelPhg);
-            this.panelNhanVien.Controls.Add(this.textPhg);
             this.panelNhanVien.Controls.Add(this.labelMaNQL);
             this.panelNhanVien.Controls.Add(this.textMaNQL);
             this.panelNhanVien.Controls.Add(this.labelMaNV);
@@ -212,13 +194,6 @@ namespace WindowAdminHome
             this.labelPhg.Size = new System.Drawing.Size(47, 21);
             this.labelPhg.TabIndex = 41;
             this.labelPhg.Text = "PHG";
-            // 
-            // textPhg
-            // 
-            this.textPhg.Location = new System.Drawing.Point(152, 374);
-            this.textPhg.Name = "textPhg";
-            this.textPhg.Size = new System.Drawing.Size(222, 22);
-            this.textPhg.TabIndex = 40;
             // 
             // labelMaNQL
             // 
@@ -416,13 +391,14 @@ namespace WindowAdminHome
             this.labelListStaff.ForeColor = System.Drawing.Color.Black;
             this.labelListStaff.Location = new System.Drawing.Point(680, 47);
             this.labelListStaff.Name = "labelListStaff";
-            this.labelListStaff.Size = new System.Drawing.Size(290, 32);
+            this.labelListStaff.Size = new System.Drawing.Size(291, 32);
             this.labelListStaff.TabIndex = 40;
             this.labelListStaff.Text = "Danh sách nhân viên";
             // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.panelMe);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -433,7 +409,6 @@ namespace WindowAdminHome
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.panelMe);
             this.panel3.Controls.Add(this.panelNhanVien);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
@@ -442,112 +417,20 @@ namespace WindowAdminHome
             this.panel3.Size = new System.Drawing.Size(419, 529);
             this.panel3.TabIndex = 39;
             // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(415, 49);
-            this.panel4.TabIndex = 0;
-            // 
-            // btNhanVien
-            // 
-            this.btNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btNhanVien.Location = new System.Drawing.Point(0, 0);
-            this.btNhanVien.Name = "btNhanVien";
-            this.btNhanVien.Size = new System.Drawing.Size(200, 49);
-            this.btNhanVien.TabIndex = 0;
-            this.btNhanVien.Text = "Nhân Viên";
-            this.btNhanVien.UseVisualStyleBackColor = false;
-            this.btNhanVien.Click += new System.EventHandler(this.btNhanVien_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btNhanVien);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 49);
-            this.panel5.TabIndex = 0;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.btMe);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(202, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(213, 49);
-            this.panel6.TabIndex = 1;
-            // 
-            // btMe
-            // 
-            this.btMe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btMe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btMe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btMe.Location = new System.Drawing.Point(0, 0);
-            this.btMe.Name = "btMe";
-            this.btMe.Size = new System.Drawing.Size(213, 49);
-            this.btMe.TabIndex = 0;
-            this.btMe.Text = "Tôi";
-            this.btMe.UseVisualStyleBackColor = false;
-            this.btMe.Click += new System.EventHandler(this.btMe_Click);
-            // 
             // panelMe
             // 
             this.panelMe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMe.Controls.Add(this.button1);
-            this.panelMe.Controls.Add(this.button2);
             this.panelMe.Controls.Add(this.button3);
-            this.panelMe.Controls.Add(this.labelPHGMe);
-            this.panelMe.Controls.Add(this.textPHGMe);
-            this.panelMe.Controls.Add(this.labelMaBQLMe);
-            this.panelMe.Controls.Add(this.textNQLMe);
-            this.panelMe.Controls.Add(this.labelMaNVMe);
-            this.panelMe.Controls.Add(this.labelVaiTroMe);
-            this.panelMe.Controls.Add(this.textMaNVMe);
-            this.panelMe.Controls.Add(this.textvaiTroMe);
-            this.panelMe.Controls.Add(this.textTenNVMe);
-            this.panelMe.Controls.Add(this.labelPhuCapMe);
-            this.panelMe.Controls.Add(this.labelTenNVMe);
-            this.panelMe.Controls.Add(this.textPhuCapMe);
-            this.panelMe.Controls.Add(this.textSexMe);
-            this.panelMe.Controls.Add(this.labelSalaryMe);
-            this.panelMe.Controls.Add(this.labelSexMe);
-            this.panelMe.Controls.Add(this.textSalaryMe);
             this.panelMe.Controls.Add(this.textBirthMe);
             this.panelMe.Controls.Add(this.labelPhoneMe);
             this.panelMe.Controls.Add(this.labelBirthMe);
             this.panelMe.Controls.Add(this.textPhoneMe);
             this.panelMe.Controls.Add(this.textAddrMe);
             this.panelMe.Controls.Add(this.labelAddrMe);
-            this.panelMe.Location = new System.Drawing.Point(3, 55);
+            this.panelMe.Location = new System.Drawing.Point(491, 29);
             this.panelMe.Name = "panelMe";
             this.panelMe.Size = new System.Drawing.Size(411, 459);
             this.panelMe.TabIndex = 56;
-            // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Location = new System.Drawing.Point(298, 414);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 29);
-            this.button1.TabIndex = 55;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Location = new System.Drawing.Point(44, 414);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(77, 29);
-            this.button2.TabIndex = 54;
-            this.button2.Text = "Insert";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -558,174 +441,7 @@ namespace WindowAdminHome
             this.button3.TabIndex = 52;
             this.button3.Text = "Update";
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // labelPHGMe
-            // 
-            this.labelPHGMe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPHGMe.AutoSize = true;
-            this.labelPHGMe.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.labelPHGMe.ForeColor = System.Drawing.Color.Black;
-            this.labelPHGMe.Location = new System.Drawing.Point(39, 373);
-            this.labelPHGMe.Name = "labelPHGMe";
-            this.labelPHGMe.Size = new System.Drawing.Size(47, 21);
-            this.labelPHGMe.TabIndex = 41;
-            this.labelPHGMe.Text = "PHG";
-            // 
-            // textPHGMe
-            // 
-            this.textPHGMe.Location = new System.Drawing.Point(152, 374);
-            this.textPHGMe.Name = "textPHGMe";
-            this.textPHGMe.Size = new System.Drawing.Size(222, 22);
-            this.textPHGMe.TabIndex = 40;
-            // 
-            // labelMaBQLMe
-            // 
-            this.labelMaBQLMe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelMaBQLMe.AutoSize = true;
-            this.labelMaBQLMe.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.labelMaBQLMe.ForeColor = System.Drawing.Color.Black;
-            this.labelMaBQLMe.Location = new System.Drawing.Point(39, 338);
-            this.labelMaBQLMe.Name = "labelMaBQLMe";
-            this.labelMaBQLMe.Size = new System.Drawing.Size(81, 21);
-            this.labelMaBQLMe.TabIndex = 39;
-            this.labelMaBQLMe.Text = "MA NQL";
-            // 
-            // textNQLMe
-            // 
-            this.textNQLMe.Location = new System.Drawing.Point(152, 339);
-            this.textNQLMe.Name = "textNQLMe";
-            this.textNQLMe.Size = new System.Drawing.Size(222, 22);
-            this.textNQLMe.TabIndex = 38;
-            // 
-            // labelMaNVMe
-            // 
-            this.labelMaNVMe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelMaNVMe.AutoSize = true;
-            this.labelMaNVMe.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.labelMaNVMe.ForeColor = System.Drawing.Color.Black;
-            this.labelMaNVMe.Location = new System.Drawing.Point(39, 19);
-            this.labelMaNVMe.Name = "labelMaNVMe";
-            this.labelMaNVMe.Size = new System.Drawing.Size(70, 21);
-            this.labelMaNVMe.TabIndex = 21;
-            this.labelMaNVMe.Text = "Ma NV";
-            // 
-            // labelVaiTroMe
-            // 
-            this.labelVaiTroMe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelVaiTroMe.AutoSize = true;
-            this.labelVaiTroMe.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.labelVaiTroMe.ForeColor = System.Drawing.Color.Black;
-            this.labelVaiTroMe.Location = new System.Drawing.Point(39, 307);
-            this.labelVaiTroMe.Name = "labelVaiTroMe";
-            this.labelVaiTroMe.Size = new System.Drawing.Size(67, 21);
-            this.labelVaiTroMe.TabIndex = 37;
-            this.labelVaiTroMe.Text = "Vai Tro";
-            // 
-            // textMaNVMe
-            // 
-            this.textMaNVMe.Location = new System.Drawing.Point(152, 20);
-            this.textMaNVMe.Name = "textMaNVMe";
-            this.textMaNVMe.Size = new System.Drawing.Size(222, 22);
-            this.textMaNVMe.TabIndex = 2;
-            // 
-            // textvaiTroMe
-            // 
-            this.textvaiTroMe.Location = new System.Drawing.Point(152, 308);
-            this.textvaiTroMe.Name = "textvaiTroMe";
-            this.textvaiTroMe.Size = new System.Drawing.Size(222, 22);
-            this.textvaiTroMe.TabIndex = 36;
-            // 
-            // textTenNVMe
-            // 
-            this.textTenNVMe.Location = new System.Drawing.Point(152, 55);
-            this.textTenNVMe.Name = "textTenNVMe";
-            this.textTenNVMe.Size = new System.Drawing.Size(222, 22);
-            this.textTenNVMe.TabIndex = 22;
-            // 
-            // labelPhuCapMe
-            // 
-            this.labelPhuCapMe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelPhuCapMe.AutoSize = true;
-            this.labelPhuCapMe.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.labelPhuCapMe.ForeColor = System.Drawing.Color.Black;
-            this.labelPhuCapMe.Location = new System.Drawing.Point(39, 272);
-            this.labelPhuCapMe.Name = "labelPhuCapMe";
-            this.labelPhuCapMe.Size = new System.Drawing.Size(83, 21);
-            this.labelPhuCapMe.TabIndex = 35;
-            this.labelPhuCapMe.Text = "Phu Cap";
-            // 
-            // labelTenNVMe
-            // 
-            this.labelTenNVMe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelTenNVMe.AutoSize = true;
-            this.labelTenNVMe.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.labelTenNVMe.ForeColor = System.Drawing.Color.Black;
-            this.labelTenNVMe.Location = new System.Drawing.Point(39, 54);
-            this.labelTenNVMe.Name = "labelTenNVMe";
-            this.labelTenNVMe.Size = new System.Drawing.Size(70, 21);
-            this.labelTenNVMe.TabIndex = 23;
-            this.labelTenNVMe.Text = "Ten NV";
-            // 
-            // textPhuCapMe
-            // 
-            this.textPhuCapMe.Location = new System.Drawing.Point(152, 273);
-            this.textPhuCapMe.Name = "textPhuCapMe";
-            this.textPhuCapMe.Size = new System.Drawing.Size(222, 22);
-            this.textPhuCapMe.TabIndex = 34;
-            // 
-            // textSexMe
-            // 
-            this.textSexMe.Location = new System.Drawing.Point(152, 91);
-            this.textSexMe.Name = "textSexMe";
-            this.textSexMe.Size = new System.Drawing.Size(222, 22);
-            this.textSexMe.TabIndex = 24;
-            // 
-            // labelSalaryMe
-            // 
-            this.labelSalaryMe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelSalaryMe.AutoSize = true;
-            this.labelSalaryMe.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.labelSalaryMe.ForeColor = System.Drawing.Color.Black;
-            this.labelSalaryMe.Location = new System.Drawing.Point(39, 236);
-            this.labelSalaryMe.Name = "labelSalaryMe";
-            this.labelSalaryMe.Size = new System.Drawing.Size(60, 21);
-            this.labelSalaryMe.TabIndex = 33;
-            this.labelSalaryMe.Text = "Luong";
-            // 
-            // labelSexMe
-            // 
-            this.labelSexMe.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelSexMe.AutoSize = true;
-            this.labelSexMe.Font = new System.Drawing.Font("Century Gothic", 10F);
-            this.labelSexMe.ForeColor = System.Drawing.Color.Black;
-            this.labelSexMe.Location = new System.Drawing.Point(39, 90);
-            this.labelSexMe.Name = "labelSexMe";
-            this.labelSexMe.Size = new System.Drawing.Size(45, 21);
-            this.labelSexMe.TabIndex = 25;
-            this.labelSexMe.Text = "Phai";
-            // 
-            // textSalaryMe
-            // 
-            this.textSalaryMe.Location = new System.Drawing.Point(152, 237);
-            this.textSalaryMe.Name = "textSalaryMe";
-            this.textSalaryMe.Size = new System.Drawing.Size(222, 22);
-            this.textSalaryMe.TabIndex = 32;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // textBirthMe
             // 
@@ -790,6 +506,68 @@ namespace WindowAdminHome
             this.labelAddrMe.TabIndex = 29;
             this.labelAddrMe.Text = "Dia Chi";
             // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.panel6);
+            this.panel4.Controls.Add(this.panel5);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel4.Location = new System.Drawing.Point(0, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(415, 49);
+            this.panel4.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.btNhanVien);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel6.Location = new System.Drawing.Point(202, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(213, 49);
+            this.panel6.TabIndex = 1;
+            // 
+            // btMe
+            // 
+            this.btMe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btMe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btMe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btMe.Location = new System.Drawing.Point(0, 0);
+            this.btMe.Name = "btMe";
+            this.btMe.Size = new System.Drawing.Size(200, 49);
+            this.btMe.TabIndex = 0;
+            this.btMe.Text = "Tôi";
+            this.btMe.UseVisualStyleBackColor = false;
+            this.btMe.Click += new System.EventHandler(this.btMe_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.btMe);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 49);
+            this.panel5.TabIndex = 0;
+            // 
+            // btNhanVien
+            // 
+            this.btNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btNhanVien.Location = new System.Drawing.Point(0, 0);
+            this.btNhanVien.Name = "btNhanVien";
+            this.btNhanVien.Size = new System.Drawing.Size(213, 49);
+            this.btNhanVien.TabIndex = 0;
+            this.btNhanVien.Text = "Nhân Viên";
+            this.btNhanVien.UseVisualStyleBackColor = false;
+            this.btNhanVien.Click += new System.EventHandler(this.btNhanVien_Click);
+            // 
+            // textPhg
+            // 
+            this.textPhg.FormattingEnabled = true;
+            this.textPhg.Location = new System.Drawing.Point(152, 373);
+            this.textPhg.Name = "textPhg";
+            this.textPhg.Size = new System.Drawing.Size(221, 24);
+            this.textPhg.TabIndex = 56;
+            // 
             // listNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -810,11 +588,11 @@ namespace WindowAdminHome
             this.panelNhanVien.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel6.ResumeLayout(false);
             this.panelMe.ResumeLayout(false);
             this.panelMe.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -826,7 +604,6 @@ namespace WindowAdminHome
         private System.Windows.Forms.TextBox textVaiTro;
         private System.Windows.Forms.Panel panelNhanVien;
         private System.Windows.Forms.Label labelPhg;
-        private System.Windows.Forms.TextBox textPhg;
         private System.Windows.Forms.Label labelMaNQL;
         private System.Windows.Forms.TextBox textMaNQL;
         private System.Windows.Forms.Label labelListStaff;
@@ -857,30 +634,13 @@ namespace WindowAdminHome
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btNhanVien;
         private System.Windows.Forms.Panel panelMe;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label labelPHGMe;
-        private System.Windows.Forms.TextBox textPHGMe;
-        private System.Windows.Forms.Label labelMaBQLMe;
-        private System.Windows.Forms.TextBox textNQLMe;
-        private System.Windows.Forms.Label labelMaNVMe;
-        private System.Windows.Forms.Label labelVaiTroMe;
-        private System.Windows.Forms.TextBox textMaNVMe;
-        private System.Windows.Forms.TextBox textvaiTroMe;
-        private System.Windows.Forms.TextBox textTenNVMe;
-        private System.Windows.Forms.Label labelPhuCapMe;
-        private System.Windows.Forms.Label labelTenNVMe;
-        private System.Windows.Forms.TextBox textPhuCapMe;
-        private System.Windows.Forms.TextBox textSexMe;
-        private System.Windows.Forms.Label labelSalaryMe;
-        private System.Windows.Forms.Label labelSexMe;
-        private System.Windows.Forms.TextBox textSalaryMe;
         private System.Windows.Forms.TextBox textBirthMe;
         private System.Windows.Forms.Label labelPhoneMe;
         private System.Windows.Forms.Label labelBirthMe;
         private System.Windows.Forms.TextBox textPhoneMe;
         private System.Windows.Forms.TextBox textAddrMe;
         private System.Windows.Forms.Label labelAddrMe;
+        private System.Windows.Forms.ComboBox textPhg;
     }
 }
