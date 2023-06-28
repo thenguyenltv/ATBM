@@ -64,14 +64,16 @@ namespace WindowAdminHome
                     // code here
                     datagrid = v_nhanvien_nhanvien;
                     tab = "OLS_TEST1.V_NHANVIEN_NHANVIEN";
+                    //MessageBox.Show("dddd");
                     btUpdate.Enabled = true;
                     btUpdate.Visible = true;
-                    labelAddr.Visible = true;
-                    textAddr.Visible = true;
-                    labelPhone.Visible = true;
-                    textPhone.Visible = true;
-                    labelBirth.Visible = true;
+                    labelAddrMe.Visible = true;
+                    textAddrMe.Visible = true;
+                    labelPhoneMe.Visible = true;
+                    textPhoneMe.Visible = true;
+                    labelBirthMe.Visible = true;
                     textBirth.Visible = true;
+                    panelMe.Visible = true;
                     break;
                 case "QUANLYTRUCTIEP":
                     // code here
@@ -85,6 +87,7 @@ namespace WindowAdminHome
                     textPhone.Visible = true;
                     labelBirth.Visible = true;
                     textBirth.Visible = true;
+                    panelMe.Visible = true;
                     break;
                 case "TRUONGPHONG":
                     // code here
@@ -98,6 +101,7 @@ namespace WindowAdminHome
                     textPhone.Visible = true;
                     labelBirth.Visible = true;
                     textBirth.Visible = true;
+                    panelMe.Visible = true;
                     break;
                 case "TAICHINH":
                     // code here
@@ -105,12 +109,12 @@ namespace WindowAdminHome
                     tab = "OLS_TEST1.NHANVIEN";
                     btUpdate.Enabled = true;
                     btUpdate.Visible = true;
-                    labelAddr.Visible = true;
-                    textAddr.Visible = true;
-                    labelPhone.Visible = true;
-                    textPhone.Visible = true;
-                    labelBirth.Visible = true;
-                    textBirth.Visible = true;
+                    //labelAddr.Visible = true;
+                    //textAddr.Visible = true;
+                    //labelPhone.Visible = true;
+                    //textPhone.Visible = true;
+                    //labelBirth.Visible = true;
+                    //textBirth.Visible = true;
                     //
                     labelSalary.Visible = true;
                     textSalary.Visible = true;
@@ -120,6 +124,7 @@ namespace WindowAdminHome
                     textMaNV.Visible=true;
                     btNhanVien.Enabled = true;
                     panelNhanVien.Visible = true;
+                    panelMe.Visible = true;
                     //
                     break;
                 case "NHANSU":
@@ -152,10 +157,13 @@ namespace WindowAdminHome
                     btNhanVien.Enabled = true;
                     btNhanVien.Cursor = default;
                     panelNhanVien.Visible = true;
+                    update_List_MAPHG();
+                    update_List_VaiTro();
                     //
                     //OPTION
                     btDelete.Visible = true;
                     btDelete.Enabled = true;
+                    panelMe.Visible = true;
                     break;
                 case "TRUONGDEAN":
                     // code here
@@ -169,6 +177,7 @@ namespace WindowAdminHome
                     textPhone.Visible = true;
                     labelBirth.Visible = true;
                     textBirth.Visible = true;
+                    panelMe.Visible = true;
                     break;
                 case "BANGIAMDOC":
                     // code here
@@ -250,15 +259,15 @@ namespace WindowAdminHome
             try
             {
                 // code here
-                string[] listName = new string[] {"TENNV", "MANV", "PHAI", "NGAYSINH", "DIACHI", "SODT", "LUONG", "PHUCAP", "VAITRO", "MANQL", "PHG" };
-                string[] listText =new string[] { textTenNV.Text, textMaNV.Text, textPhai.Text, textBirth.Text, textAddr.Text, textPhone.Text, textSalary.Text, textPhuCap.Text, textVaiTro.Text, textMaNQL.Text, textPhg.Text };
+                string[] listName = new string[] {"MANV", "PHAI", "NGAYSINH", "DIACHI", "SODT", "LUONG", "PHUCAP", "VAITRO", "MANQL", "PHG" };
+                string[] listText =new string[] {textMaNV.Text, textPhai.Text, textBirth.Text, textAddr.Text, textPhone.Text, textSalary.Text, textPhuCap.Text, textVaiTro.Text, textMaNQL.Text, textPhg.Text };
                 if (this.conn.State == ConnectionState.Closed)
                     conn.Open();
                 for (int i = 0; i < listText.Length; i++)
                 {
                     if (this.conn.State == ConnectionState.Closed)
                         conn.Open();
-                    if (listText[i] == "")
+                    if (listText[i]=="")
                         continue;
                     OracleCommand getEmps = conn.CreateCommand();
                     getEmps.CommandText = "OLS_TEST1.PROC_UPDATE";
@@ -267,12 +276,12 @@ namespace WindowAdminHome
                     getEmps.Parameters.Add("VAL", listText[i]);
                     //getEmps.Parameters.Add("MA", username.Substring(2,4));//CHO ROLE KO PHAI LA NHANSU VA TAICHINH
                     getEmps.Parameters.Add("MA", textMaNV.Text);//CHO ROLE NHANSU VA TAICHINH
+                    getEmps.Parameters.Add("CONCOL", "MANV");
                     getEmps.Parameters.Add("TAB", tab);
                     getEmps.ExecuteNonQuery();
-                    MessageBox.Show("Cap nhat thanh cong!");
                     updateGrid();
                 }
-
+                MessageBox.Show("Cap nhat thanh cong!");
             }
             catch (Exception ex)
             {
@@ -290,10 +299,12 @@ namespace WindowAdminHome
                 OracleCommand getEmps = conn.CreateCommand();
                 getEmps.CommandText = "OLS_TEST1.PROC_DELETE";
                 getEmps.CommandType = CommandType.StoredProcedure;
-                getEmps.Parameters.Add("COL", "MaNV");
+                getEmps.Parameters.Add("COL", "MANV");
                 getEmps.Parameters.Add("VAL", textMaNV.Text);
                 getEmps.Parameters.Add("TAB", tab);
+                getEmps.ExecuteNonQuery();
                 updateGrid();
+                MessageBox.Show("Xoa thanh cong!");
 
             }
             catch(Exception ex)
@@ -342,7 +353,44 @@ namespace WindowAdminHome
                 panelMe.Visible = true;
 
         }
-
+        private void update_List_MAPHG()
+        {
+            if (this.conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+            OracleCommand getID = conn.CreateCommand();
+            getID.CommandText = "select MAPB from OLS_TEST1.PHONGBAN";
+            ///conn.ConnectionString
+            getID.CommandType = CommandType.Text;
+            OracleDataReader reader = getID.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader.HasRows)
+                {
+                    textPhg.Items.Add(reader["MAPB"].ToString());
+                }
+            }
+        }
+        private void update_List_VaiTro()
+        {
+            if (this.conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+            OracleCommand getID = conn.CreateCommand();
+            getID.CommandText = "select DISTINCT VAITRO from "+tab+" WHERE UPPER(VAITRO)='BANGIAMDOC'";
+            ///conn.ConnectionString
+            getID.CommandType = CommandType.Text;
+            OracleDataReader reader = getID.ExecuteReader();
+            while (reader.Read())
+            {
+                if (reader.HasRows)
+                {
+                    textVaiTro.Items.Add(reader["VAITRO"].ToString());
+                }
+            }
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -372,10 +420,9 @@ namespace WindowAdminHome
                     //getEmps.Parameters.Add("MA", textMaNV.Text);//CHO ROLE NHANSU VA TAICHINH
                     getEmps.Parameters.Add("TAB", tab);
                     getEmps.ExecuteNonQuery();
-                    MessageBox.Show("Cap nhat thanh cong!");
                     updateGrid();
                 }
-
+                MessageBox.Show("Cap nhat thanh cong!");
             }
             catch (Exception ex)
             {

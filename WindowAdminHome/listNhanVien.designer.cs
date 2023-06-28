@@ -31,8 +31,8 @@ namespace WindowAdminHome
         {
             this.Priv_List = new System.Windows.Forms.DataGridView();
             this.labelVaiTro = new System.Windows.Forms.Label();
-            this.textVaiTro = new System.Windows.Forms.TextBox();
             this.panelNhanVien = new System.Windows.Forms.Panel();
+            this.textPhg = new System.Windows.Forms.ComboBox();
             this.btDelete = new System.Windows.Forms.Button();
             this.btInsert = new System.Windows.Forms.Button();
             this.btUpdate = new System.Windows.Forms.Button();
@@ -57,7 +57,6 @@ namespace WindowAdminHome
             this.labelAddr = new System.Windows.Forms.Label();
             this.labelListStaff = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panelMe = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.textBirthMe = new System.Windows.Forms.TextBox();
@@ -66,17 +65,18 @@ namespace WindowAdminHome
             this.textPhoneMe = new System.Windows.Forms.TextBox();
             this.textAddrMe = new System.Windows.Forms.TextBox();
             this.labelAddrMe = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.btMe = new System.Windows.Forms.Button();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.btNhanVien = new System.Windows.Forms.Button();
-            this.textPhg = new System.Windows.Forms.ComboBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.btMe = new System.Windows.Forms.Button();
+            this.textVaiTro = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.Priv_List)).BeginInit();
             this.panelNhanVien.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panelMe.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -108,16 +108,11 @@ namespace WindowAdminHome
             this.labelVaiTro.TabIndex = 37;
             this.labelVaiTro.Text = "Vai Tro";
             // 
-            // textVaiTro
-            // 
-            this.textVaiTro.Location = new System.Drawing.Point(152, 308);
-            this.textVaiTro.Name = "textVaiTro";
-            this.textVaiTro.Size = new System.Drawing.Size(222, 22);
-            this.textVaiTro.TabIndex = 36;
-            // 
             // panelNhanVien
             // 
             this.panelNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelNhanVien.Controls.Add(this.panelMe);
+            this.panelNhanVien.Controls.Add(this.textVaiTro);
             this.panelNhanVien.Controls.Add(this.textPhg);
             this.panelNhanVien.Controls.Add(this.btDelete);
             this.panelNhanVien.Controls.Add(this.btInsert);
@@ -128,7 +123,6 @@ namespace WindowAdminHome
             this.panelNhanVien.Controls.Add(this.labelMaNV);
             this.panelNhanVien.Controls.Add(this.labelVaiTro);
             this.panelNhanVien.Controls.Add(this.textMaNV);
-            this.panelNhanVien.Controls.Add(this.textVaiTro);
             this.panelNhanVien.Controls.Add(this.textTenNV);
             this.panelNhanVien.Controls.Add(this.labelPhuCap);
             this.panelNhanVien.Controls.Add(this.labelTenNV);
@@ -147,6 +141,14 @@ namespace WindowAdminHome
             this.panelNhanVien.Name = "panelNhanVien";
             this.panelNhanVien.Size = new System.Drawing.Size(411, 459);
             this.panelNhanVien.TabIndex = 38;
+            // 
+            // textPhg
+            // 
+            this.textPhg.FormattingEnabled = true;
+            this.textPhg.Location = new System.Drawing.Point(152, 373);
+            this.textPhg.Name = "textPhg";
+            this.textPhg.Size = new System.Drawing.Size(221, 24);
+            this.textPhg.TabIndex = 56;
             // 
             // btDelete
             // 
@@ -398,24 +400,12 @@ namespace WindowAdminHome
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.panelMe);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1159, 533);
             this.panel2.TabIndex = 41;
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.panelNhanVien);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(419, 529);
-            this.panel3.TabIndex = 39;
             // 
             // panelMe
             // 
@@ -427,7 +417,7 @@ namespace WindowAdminHome
             this.panelMe.Controls.Add(this.textPhoneMe);
             this.panelMe.Controls.Add(this.textAddrMe);
             this.panelMe.Controls.Add(this.labelAddrMe);
-            this.panelMe.Location = new System.Drawing.Point(491, 29);
+            this.panelMe.Location = new System.Drawing.Point(0, -1);
             this.panelMe.Name = "panelMe";
             this.panelMe.Size = new System.Drawing.Size(411, 459);
             this.panelMe.TabIndex = 56;
@@ -506,6 +496,17 @@ namespace WindowAdminHome
             this.labelAddrMe.TabIndex = 29;
             this.labelAddrMe.Text = "Dia Chi";
             // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.panelNhanVien);
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(419, 529);
+            this.panel3.TabIndex = 39;
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.panel6);
@@ -525,28 +526,6 @@ namespace WindowAdminHome
             this.panel6.Size = new System.Drawing.Size(213, 49);
             this.panel6.TabIndex = 1;
             // 
-            // btMe
-            // 
-            this.btMe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btMe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btMe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btMe.Location = new System.Drawing.Point(0, 0);
-            this.btMe.Name = "btMe";
-            this.btMe.Size = new System.Drawing.Size(200, 49);
-            this.btMe.TabIndex = 0;
-            this.btMe.Text = "Tôi";
-            this.btMe.UseVisualStyleBackColor = false;
-            this.btMe.Click += new System.EventHandler(this.btMe_Click);
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.btMe);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 49);
-            this.panel5.TabIndex = 0;
-            // 
             // btNhanVien
             // 
             this.btNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
@@ -560,13 +539,35 @@ namespace WindowAdminHome
             this.btNhanVien.UseVisualStyleBackColor = false;
             this.btNhanVien.Click += new System.EventHandler(this.btNhanVien_Click);
             // 
-            // textPhg
+            // panel5
             // 
-            this.textPhg.FormattingEnabled = true;
-            this.textPhg.Location = new System.Drawing.Point(152, 373);
-            this.textPhg.Name = "textPhg";
-            this.textPhg.Size = new System.Drawing.Size(221, 24);
-            this.textPhg.TabIndex = 56;
+            this.panel5.Controls.Add(this.btMe);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(200, 49);
+            this.panel5.TabIndex = 0;
+            // 
+            // btMe
+            // 
+            this.btMe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btMe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btMe.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btMe.Location = new System.Drawing.Point(0, 0);
+            this.btMe.Name = "btMe";
+            this.btMe.Size = new System.Drawing.Size(200, 49);
+            this.btMe.TabIndex = 0;
+            this.btMe.Text = "Tôi";
+            this.btMe.UseVisualStyleBackColor = false;
+            this.btMe.Click += new System.EventHandler(this.btMe_Click);
+            // 
+            // textVaiTro
+            // 
+            this.textVaiTro.FormattingEnabled = true;
+            this.textVaiTro.Location = new System.Drawing.Point(152, 304);
+            this.textVaiTro.Name = "textVaiTro";
+            this.textVaiTro.Size = new System.Drawing.Size(222, 24);
+            this.textVaiTro.TabIndex = 57;
             // 
             // listNhanVien
             // 
@@ -587,9 +588,9 @@ namespace WindowAdminHome
             this.panelNhanVien.ResumeLayout(false);
             this.panelNhanVien.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
             this.panelMe.ResumeLayout(false);
             this.panelMe.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -601,7 +602,6 @@ namespace WindowAdminHome
         #endregion
         private System.Windows.Forms.DataGridView Priv_List;
         private System.Windows.Forms.Label labelVaiTro;
-        private System.Windows.Forms.TextBox textVaiTro;
         private System.Windows.Forms.Panel panelNhanVien;
         private System.Windows.Forms.Label labelPhg;
         private System.Windows.Forms.Label labelMaNQL;
@@ -642,5 +642,6 @@ namespace WindowAdminHome
         private System.Windows.Forms.TextBox textAddrMe;
         private System.Windows.Forms.Label labelAddrMe;
         private System.Windows.Forms.ComboBox textPhg;
+        private System.Windows.Forms.ComboBox textVaiTro;
     }
 }
