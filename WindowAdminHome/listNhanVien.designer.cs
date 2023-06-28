@@ -32,6 +32,7 @@ namespace WindowAdminHome
             this.Priv_List = new System.Windows.Forms.DataGridView();
             this.labelVaiTro = new System.Windows.Forms.Label();
             this.panelNhanVien = new System.Windows.Forms.Panel();
+            this.textVaiTro = new System.Windows.Forms.ComboBox();
             this.textPhg = new System.Windows.Forms.ComboBox();
             this.btDelete = new System.Windows.Forms.Button();
             this.btInsert = new System.Windows.Forms.Button();
@@ -49,33 +50,32 @@ namespace WindowAdminHome
             this.labelSalary = new System.Windows.Forms.Label();
             this.labelSex = new System.Windows.Forms.Label();
             this.textSalary = new System.Windows.Forms.TextBox();
-            this.textBirth = new System.Windows.Forms.TextBox();
             this.labelPhone = new System.Windows.Forms.Label();
             this.labelBirth = new System.Windows.Forms.Label();
             this.textPhone = new System.Windows.Forms.TextBox();
             this.textAddr = new System.Windows.Forms.TextBox();
             this.labelAddr = new System.Windows.Forms.Label();
-            this.labelListStaff = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panelMe = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
-            this.textBirthMe = new System.Windows.Forms.TextBox();
             this.labelPhoneMe = new System.Windows.Forms.Label();
             this.labelBirthMe = new System.Windows.Forms.Label();
-            this.textPhoneMe = new System.Windows.Forms.TextBox();
             this.textAddrMe = new System.Windows.Forms.TextBox();
             this.labelAddrMe = new System.Windows.Forms.Label();
+            this.labelListStaff = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btNhanVien = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btMe = new System.Windows.Forms.Button();
-            this.textVaiTro = new System.Windows.Forms.ComboBox();
+            this.textBirthMe = new System.Windows.Forms.DateTimePicker();
+            this.textPhoneMe = new System.Windows.Forms.TextBox();
+            this.textBirth = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.Priv_List)).BeginInit();
             this.panelNhanVien.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panelMe.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -87,12 +87,14 @@ namespace WindowAdminHome
             this.Priv_List.BackgroundColor = System.Drawing.SystemColors.Control;
             this.Priv_List.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Priv_List.GridColor = System.Drawing.SystemColors.Control;
-            this.Priv_List.Location = new System.Drawing.Point(473, 126);
+            this.Priv_List.Location = new System.Drawing.Point(437, 103);
             this.Priv_List.Name = "Priv_List";
             this.Priv_List.RowHeadersWidth = 51;
             this.Priv_List.RowTemplate.Height = 24;
-            this.Priv_List.Size = new System.Drawing.Size(664, 397);
+            this.Priv_List.Size = new System.Drawing.Size(710, 420);
             this.Priv_List.TabIndex = 0;
+            this.Priv_List.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Priv_List_CellContentClick);
+            this.Priv_List.SelectionChanged += new System.EventHandler(this.Priv_List_SelectionChanged);
             // 
             // labelVaiTro
             // 
@@ -111,7 +113,7 @@ namespace WindowAdminHome
             // panelNhanVien
             // 
             this.panelNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelNhanVien.Controls.Add(this.panelMe);
+            this.panelNhanVien.Controls.Add(this.textBirth);
             this.panelNhanVien.Controls.Add(this.textVaiTro);
             this.panelNhanVien.Controls.Add(this.textPhg);
             this.panelNhanVien.Controls.Add(this.btDelete);
@@ -131,7 +133,6 @@ namespace WindowAdminHome
             this.panelNhanVien.Controls.Add(this.labelSalary);
             this.panelNhanVien.Controls.Add(this.labelSex);
             this.panelNhanVien.Controls.Add(this.textSalary);
-            this.panelNhanVien.Controls.Add(this.textBirth);
             this.panelNhanVien.Controls.Add(this.labelPhone);
             this.panelNhanVien.Controls.Add(this.labelBirth);
             this.panelNhanVien.Controls.Add(this.textPhone);
@@ -141,6 +142,14 @@ namespace WindowAdminHome
             this.panelNhanVien.Name = "panelNhanVien";
             this.panelNhanVien.Size = new System.Drawing.Size(411, 459);
             this.panelNhanVien.TabIndex = 38;
+            // 
+            // textVaiTro
+            // 
+            this.textVaiTro.FormattingEnabled = true;
+            this.textVaiTro.Location = new System.Drawing.Point(152, 304);
+            this.textVaiTro.Name = "textVaiTro";
+            this.textVaiTro.Size = new System.Drawing.Size(222, 24);
+            this.textVaiTro.TabIndex = 57;
             // 
             // textPhg
             // 
@@ -323,13 +332,6 @@ namespace WindowAdminHome
             this.textSalary.Size = new System.Drawing.Size(222, 22);
             this.textSalary.TabIndex = 32;
             // 
-            // textBirth
-            // 
-            this.textBirth.Location = new System.Drawing.Point(152, 127);
-            this.textBirth.Name = "textBirth";
-            this.textBirth.Size = new System.Drawing.Size(222, 22);
-            this.textBirth.TabIndex = 26;
-            // 
             // labelPhone
             // 
             this.labelPhone.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -386,38 +388,17 @@ namespace WindowAdminHome
             this.labelAddr.TabIndex = 29;
             this.labelAddr.Text = "Dia Chi";
             // 
-            // labelListStaff
-            // 
-            this.labelListStaff.AutoSize = true;
-            this.labelListStaff.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
-            this.labelListStaff.ForeColor = System.Drawing.Color.Black;
-            this.labelListStaff.Location = new System.Drawing.Point(680, 47);
-            this.labelListStaff.Name = "labelListStaff";
-            this.labelListStaff.Size = new System.Drawing.Size(291, 32);
-            this.labelListStaff.TabIndex = 40;
-            this.labelListStaff.Text = "Danh sách nhân viên";
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1159, 533);
-            this.panel2.TabIndex = 41;
-            // 
             // panelMe
             // 
             this.panelMe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMe.Controls.Add(this.button3);
             this.panelMe.Controls.Add(this.textBirthMe);
+            this.panelMe.Controls.Add(this.button3);
             this.panelMe.Controls.Add(this.labelPhoneMe);
             this.panelMe.Controls.Add(this.labelBirthMe);
             this.panelMe.Controls.Add(this.textPhoneMe);
             this.panelMe.Controls.Add(this.textAddrMe);
             this.panelMe.Controls.Add(this.labelAddrMe);
-            this.panelMe.Location = new System.Drawing.Point(0, -1);
+            this.panelMe.Location = new System.Drawing.Point(3, 55);
             this.panelMe.Name = "panelMe";
             this.panelMe.Size = new System.Drawing.Size(411, 459);
             this.panelMe.TabIndex = 56;
@@ -432,13 +413,6 @@ namespace WindowAdminHome
             this.button3.Text = "Update";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // textBirthMe
-            // 
-            this.textBirthMe.Location = new System.Drawing.Point(152, 127);
-            this.textBirthMe.Name = "textBirthMe";
-            this.textBirthMe.Size = new System.Drawing.Size(222, 22);
-            this.textBirthMe.TabIndex = 26;
             // 
             // labelPhoneMe
             // 
@@ -468,13 +442,6 @@ namespace WindowAdminHome
             this.labelBirthMe.TabIndex = 27;
             this.labelBirthMe.Text = "Ngay Sinh";
             // 
-            // textPhoneMe
-            // 
-            this.textPhoneMe.Location = new System.Drawing.Point(152, 201);
-            this.textPhoneMe.Name = "textPhoneMe";
-            this.textPhoneMe.Size = new System.Drawing.Size(222, 22);
-            this.textPhoneMe.TabIndex = 30;
-            // 
             // textAddrMe
             // 
             this.textAddrMe.Location = new System.Drawing.Point(152, 166);
@@ -496,10 +463,34 @@ namespace WindowAdminHome
             this.labelAddrMe.TabIndex = 29;
             this.labelAddrMe.Text = "Dia Chi";
             // 
+            // labelListStaff
+            // 
+            this.labelListStaff.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelListStaff.AutoSize = true;
+            this.labelListStaff.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+            this.labelListStaff.ForeColor = System.Drawing.Color.Black;
+            this.labelListStaff.Location = new System.Drawing.Point(645, 35);
+            this.labelListStaff.Name = "labelListStaff";
+            this.labelListStaff.Size = new System.Drawing.Size(290, 32);
+            this.labelListStaff.TabIndex = 40;
+            this.labelListStaff.Text = "Danh sách nhân viên";
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.labelListStaff);
+            this.panel2.Controls.Add(this.panel3);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1159, 533);
+            this.panel2.TabIndex = 41;
+            // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.panelNhanVien);
+            this.panel3.Controls.Add(this.panelMe);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -561,13 +552,26 @@ namespace WindowAdminHome
             this.btMe.UseVisualStyleBackColor = false;
             this.btMe.Click += new System.EventHandler(this.btMe_Click);
             // 
-            // textVaiTro
+            // textBirthMe
             // 
-            this.textVaiTro.FormattingEnabled = true;
-            this.textVaiTro.Location = new System.Drawing.Point(152, 304);
-            this.textVaiTro.Name = "textVaiTro";
-            this.textVaiTro.Size = new System.Drawing.Size(222, 24);
-            this.textVaiTro.TabIndex = 57;
+            this.textBirthMe.Location = new System.Drawing.Point(152, 127);
+            this.textBirthMe.Name = "textBirthMe";
+            this.textBirthMe.Size = new System.Drawing.Size(222, 22);
+            this.textBirthMe.TabIndex = 63;
+            // 
+            // textPhoneMe
+            // 
+            this.textPhoneMe.Location = new System.Drawing.Point(152, 201);
+            this.textPhoneMe.Name = "textPhoneMe";
+            this.textPhoneMe.Size = new System.Drawing.Size(222, 22);
+            this.textPhoneMe.TabIndex = 30;
+            // 
+            // textBirth
+            // 
+            this.textBirth.Location = new System.Drawing.Point(153, 126);
+            this.textBirth.Name = "textBirth";
+            this.textBirth.Size = new System.Drawing.Size(222, 22);
+            this.textBirth.TabIndex = 64;
             // 
             // listNhanVien
             // 
@@ -576,7 +580,6 @@ namespace WindowAdminHome
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(1159, 533);
             this.ControlBox = false;
-            this.Controls.Add(this.labelListStaff);
             this.Controls.Add(this.Priv_List);
             this.Controls.Add(this.panel2);
             this.MaximizeBox = false;
@@ -587,15 +590,15 @@ namespace WindowAdminHome
             ((System.ComponentModel.ISupportInitialize)(this.Priv_List)).EndInit();
             this.panelNhanVien.ResumeLayout(false);
             this.panelNhanVien.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.panelMe.ResumeLayout(false);
             this.panelMe.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -617,7 +620,6 @@ namespace WindowAdminHome
         private System.Windows.Forms.Label labelSalary;
         private System.Windows.Forms.Label labelSex;
         private System.Windows.Forms.TextBox textSalary;
-        private System.Windows.Forms.TextBox textBirth;
         private System.Windows.Forms.Label labelPhone;
         private System.Windows.Forms.Label labelBirth;
         private System.Windows.Forms.TextBox textPhone;
@@ -635,13 +637,14 @@ namespace WindowAdminHome
         private System.Windows.Forms.Button btNhanVien;
         private System.Windows.Forms.Panel panelMe;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBirthMe;
         private System.Windows.Forms.Label labelPhoneMe;
         private System.Windows.Forms.Label labelBirthMe;
-        private System.Windows.Forms.TextBox textPhoneMe;
         private System.Windows.Forms.TextBox textAddrMe;
         private System.Windows.Forms.Label labelAddrMe;
         private System.Windows.Forms.ComboBox textPhg;
         private System.Windows.Forms.ComboBox textVaiTro;
+        private System.Windows.Forms.DateTimePicker textBirthMe;
+        private System.Windows.Forms.TextBox textPhoneMe;
+        private System.Windows.Forms.DateTimePicker textBirth;
     }
 }

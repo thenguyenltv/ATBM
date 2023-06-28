@@ -124,6 +124,7 @@ namespace WindowAdminHome
             // load login form
             Form1 loginForm = new Form1();
             loginForm.Show();
+
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)

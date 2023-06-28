@@ -28,6 +28,7 @@ namespace WindowAdminHome
             string nhanvien = "SELECT * FROM OLS_TEST1.NHANVIEN ORDER BY 1";
             
             this.conn = conn;
+            // Hide all object of Panel "Nhan Vien" 
             btDelete.Enabled = false;
             btInsert.Enabled = false;
             btUpdate.Enabled = false;
@@ -131,17 +132,23 @@ namespace WindowAdminHome
                     // code here
                     datagrid = v_nhanvien;
                     tab = "OLS_TEST1.V_NHANVIEN";
+
+                    btNhanVien.Enabled = true;
+                    // Show button
                     btUpdate.Enabled = true;
                     btUpdate.Visible = true;
+                    btInsert.Enabled = true;
+                    btInsert.Visible = true;
+                    btDelete.Visible = true;
+                    btDelete.Enabled = true;
+
+                    // Show label & text
                     labelAddr.Visible = true;
                     textAddr.Visible = true;
                     labelPhone.Visible = true;
                     textPhone.Visible = true;
                     labelBirth.Visible = true;
                     textBirth.Visible = true;
-                    //
-                    btInsert.Enabled = true;
-                    btInsert.Visible = true;
                     labelMaNV.Visible = true;
                     labelTenNV.Visible = true;
                     labelSex.Visible = true;
@@ -154,16 +161,9 @@ namespace WindowAdminHome
                     textVaiTro.Visible = true;
                     textMaNQL.Visible = true;
                     textPhg.Visible = true;
-                    btNhanVien.Enabled = true;
-                    btNhanVien.Cursor = default;
-                    panelNhanVien.Visible = true;
+                    
                     update_List_MAPHG();
                     update_List_VaiTro();
-                    //
-                    //OPTION
-                    btDelete.Visible = true;
-                    btDelete.Enabled = true;
-                    panelMe.Visible = true;
                     break;
                 case "TRUONGDEAN":
                     // code here
@@ -194,11 +194,12 @@ namespace WindowAdminHome
         
         public void customDesign()
         {
-            panelNhanVien.Visible = false;
-            btMe.BackColor = Color.White;
-            btMe.Enabled = true;
+            // Panel "Toi" show
             panelMe.Visible = true;
-            btNhanVien.Visible = true;
+            btMe.BackColor = Color.White;
+
+            // Panel "Nhan Vien" hide
+            panelNhanVien.Visible = false;
         }
         
         private void updateGrid()
@@ -236,7 +237,7 @@ namespace WindowAdminHome
                 getEmps.Parameters.Add("p_MANV", textMaNV.Text);
                 getEmps.Parameters.Add("p_TENNV", textTenNV.Text);
                 getEmps.Parameters.Add("p_PHAI", textPhai.Text);
-                getEmps.Parameters.Add("p_NGAYSINH", textBirth.Text);
+                getEmps.Parameters.Add("p_NGAYSINH", textBirth.Value.ToString("MM/dd/yyyy"));
                 getEmps.Parameters.Add("p_DIACHI", textAddr.Text);
                 getEmps.Parameters.Add("p_SODT", textPhone.Text);
                 getEmps.Parameters.Add("p_VAITRO", textVaiTro.Text);
@@ -260,7 +261,7 @@ namespace WindowAdminHome
             {
                 // code here
                 string[] listName = new string[] {"MANV", "PHAI", "NGAYSINH", "DIACHI", "SODT", "LUONG", "PHUCAP", "VAITRO", "MANQL", "PHG" };
-                string[] listText =new string[] {textMaNV.Text, textPhai.Text, textBirth.Text, textAddr.Text, textPhone.Text, textSalary.Text, textPhuCap.Text, textVaiTro.Text, textMaNQL.Text, textPhg.Text };
+                string[] listText =new string[] {textMaNV.Text, textPhai.Text, textBirth.Value.ToString("MM/dd/yyyy"), textAddr.Text, textPhone.Text, textSalary.Text, textPhuCap.Text, textVaiTro.Text, textMaNQL.Text, textPhg.Text };
                 if (this.conn.State == ConnectionState.Closed)
                     conn.Open();
                 for (int i = 0; i < listText.Length; i++)
@@ -336,10 +337,8 @@ namespace WindowAdminHome
         {
             btNhanVien.BackColor = Color.White;
             btMe.BackColor = Color.FromArgb(224, 224, 224);
-            if (panelMe.Visible)
-                panelMe.Visible = false;
-            if(!panelNhanVien.Visible)
-                panelNhanVien.Visible = true;
+            panelMe.Visible = false;
+            panelNhanVien.Visible = true;
         }
 
         private void btMe_Click(object sender, EventArgs e)
@@ -347,10 +346,8 @@ namespace WindowAdminHome
             btMe.BackColor = Color.White;
             btNhanVien.BackColor = Color.FromArgb(224, 224, 224);
 
-            if (panelNhanVien.Visible)
-                panelNhanVien.Visible = false;
-            if (!panelMe.Visible)
-                panelMe.Visible = true;
+            panelMe.Visible = true;
+            panelNhanVien.Visible = false;
 
         }
         private void update_List_MAPHG()
@@ -391,10 +388,6 @@ namespace WindowAdminHome
                 }
             }
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -402,7 +395,7 @@ namespace WindowAdminHome
             {
                 // code here
                 string[] listName = new string[] { "NGAYSINH", "DIACHI", "SODT" };
-                string[] listText = new string[] { textBirthMe.Text, textAddrMe.Text, textPhoneMe.Text };
+                string[] listText = new string[] { textBirthMe.Value.ToString("MM/dd/yyyy"), textAddrMe.Text, textPhoneMe.Text };
                 if (this.conn.State == ConnectionState.Closed)
                     conn.Open();
                 for (int i = 0; i < listText.Length; i++)
@@ -428,6 +421,33 @@ namespace WindowAdminHome
             {
                 MessageBox.Show("Thao tac khong hop le!" + ex.Message + datagrid);
             }
+        }
+
+        private void Priv_List_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex >= 0 && !Priv_List.Rows[e.RowIndex].Selected)
+            {
+                DataGridViewRow clickedRow = Priv_List.Rows[e.RowIndex];
+
+                clickedRow.Selected = true;
+            }
+        }
+
+        private void Priv_List_SelectionChanged(object sender, EventArgs e)
+        {
+            if (Priv_List.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = Priv_List.SelectedRows[0];
+                textBirthMe.Value = DateTime.Parse(selectedRow.Cells["NGAYSINH"].Value.ToString());
+                textAddrMe.Text = selectedRow.Cells["DIACHI"].Value.ToString();
+                textPhoneMe.Text = selectedRow.Cells["SODT"].Value.ToString();
+            }
+
+        }
+
+        private void textBirth_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

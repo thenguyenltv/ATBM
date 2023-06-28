@@ -36,7 +36,7 @@ namespace WindowAdminHome
                 string usr = textBoxUsr.Text;
                 string pswd = textBoxPwd.Text;
                 Console.WriteLine(usr + " " + pswd);
-                string loginQuery = @"DATA SOURCE=localhost:1521/XE1;USER ID=" + usr + ";PASSWORD=" + pswd + "";
+                string loginQuery = @"DATA SOURCE=localhost:1521/XEPDB1;USER ID=" + usr + ";PASSWORD=" + pswd + "";
                 string role = "";
                 try
                 {
