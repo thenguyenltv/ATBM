@@ -35,6 +35,8 @@ namespace WindowAdminHome
         private void customizeDesign()
         {
             panelSubList.Visible = false;
+            notiPanel.Visible = false;
+            pictureBoxNoti2.Visible = false;
         }
 
         private void showSubMenu(Panel subMenu)
@@ -123,7 +125,43 @@ namespace WindowAdminHome
             Form1 loginForm = new Form1();
             loginForm.Show();
         }
-        
 
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            notiPanel.Visible = true;
+            pictureNoti1.Visible = false;
+            pictureBoxNoti2.Visible = true;
+        }
+
+        private void pictureBoxNoti2_Click(object sender, EventArgs e)
+        {
+            if(notiPanel.Visible)
+                notiPanel.Visible = false;
+            pictureBoxNoti2.Visible = false;
+            pictureNoti1.Visible = true;
+        }
+
+        /*//Cap nhat listNV vao notice
+        private void updateGrid()
+        {
+            if (this.conn.State == ConnectionState.Closed)
+                conn.Open();
+            OracleCommand getEmps = conn.CreateCommand();
+            getEmps.CommandText = "nhanvien";
+            try
+            {
+                getEmps.CommandType = CommandType.Text;
+                OracleDataReader reader = getEmps.ExecuteReader();
+                DataTable empDT = new DataTable();
+                empDT.Load(reader);
+                dataGridView1.DataSource = empDT;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Nguoi dung khong co quyen truy cap! " + ex.Message);
+            }
+            conn.Close();
+        }
+        //updateGrid();*/
     }
 }
