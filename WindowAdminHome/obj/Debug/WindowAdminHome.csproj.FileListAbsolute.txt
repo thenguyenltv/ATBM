@@ -1,0 +1,195 @@
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\WindowAdminHome.exe.config
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\WindowAdminHome.exe
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\WindowAdminHome.pdb
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Buffers.dll
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Memory.dll
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Json.dll
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.ValueTuple.dll
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Buffers.xml
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Memory.xml
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Json.xml
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.ValueTuple.xml
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.SuggestedBindingRedirects.cache
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.CheckInfo.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.FormHome.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.GrantRole.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.GrantUser.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ImplementRole.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ImplementUsr.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listDeAn.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listNhanVien.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listPhanCong.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listPhongBan.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListPriv.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListRole.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListTab.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListUsr.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.NhanVien.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.Properties.Resources.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.RevokeRole.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.RevokeUser.resources
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.GenerateResource.cache
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.CopyComplete
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.exe
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.pdb
+C:\Users\ADMIN\Downloads\atbm_ph1+2\ph1_phalan2\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.Form1.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\WindowAdminHome.exe.config
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\WindowAdminHome.exe
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\WindowAdminHome.pdb
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Buffers.dll
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Memory.dll
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Json.dll
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.ValueTuple.dll
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Buffers.xml
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Memory.xml
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Json.xml
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.ValueTuple.xml
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.AssemblyReference.cache
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.CheckInfo.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.Form1.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.FormHome.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.GrantRole.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.GrantUser.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ImplementRole.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ImplementUsr.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listDeAn.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listNhanVien.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listPhanCong.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listPhongBan.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListPriv.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListRole.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListTab.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListUsr.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.NhanVien.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.Properties.Resources.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.RevokeRole.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.RevokeUser.resources
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.GenerateResource.cache
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.CoreCompileInputs.cache
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.CopyComplete
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.exe
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.pdb
+C:\Users\NGOC QUANG\OneDrive\Desktop\Quang\ATTBMDL\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListRecord.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\WindowAdminHome.exe.config
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\WindowAdminHome.exe
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\WindowAdminHome.pdb
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Buffers.dll
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Memory.dll
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Json.dll
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.ValueTuple.dll
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Buffers.xml
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Memory.xml
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Json.xml
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.ValueTuple.xml
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.SuggestedBindingRedirects.cache
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.CheckInfo.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.Form1.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.FormHome.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.GrantRole.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.GrantUser.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ImplementRole.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ImplementUsr.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listDeAn.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listNhanVien.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listPhanCong.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listPhongBan.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListPriv.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListRecord.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListRole.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListTab.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListUsr.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.NhanVien.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.Properties.Resources.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.RevokeRole.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.RevokeUser.resources
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.GenerateResource.cache
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.CopyComplete
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.exe
+C:\Users\ADMIN\Downloads\ph2_final1\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.pdb
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\WindowAdminHome.exe.config
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\WindowAdminHome.exe
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\WindowAdminHome.pdb
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Buffers.dll
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Memory.dll
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Json.dll
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.ValueTuple.dll
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Buffers.xml
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Memory.xml
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Text.Json.xml
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\bin\Debug\System.ValueTuple.xml
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.SuggestedBindingRedirects.cache
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.CheckInfo.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.Form1.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.FormHome.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.GrantRole.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.GrantUser.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ImplementRole.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ImplementUsr.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listDeAn.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listNhanVien.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listPhanCong.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.listPhongBan.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListPriv.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListRecord.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListRole.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListTab.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ListUsr.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.NhanVien.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.RevokeRole.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.RevokeUser.resources
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.exe
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.pdb
+C:\Users\ADMIN\Desktop\ATBM_PH1_ok\WindowAdminHome\obj\Debug\WindowAdminHome.ChildHome.resources
