@@ -25,7 +25,7 @@ namespace WindowAdminHome
             if (this.conn.State == ConnectionState.Closed)
                 conn.Open();
             OracleCommand getEmps = conn.CreateCommand();
-            getEmps.CommandText = "SELECT DBUSERNAME, ACTION_NAME, OBJECT_NAME,SQL_TEXT FROM UNIFIED_AUDIT_TRAIL WHERE AUDIT_TYPE!='Standard'";
+            getEmps.CommandText = "SELECT DBUSERNAME, ACTION_NAME, OBJECT_NAME,SQL_TEXT FROM UNIFIED_AUDIT_TRAIL WHERE AUDIT_TYPE='FineGrainedAudit'";
             try
             {
                 getEmps.CommandType = CommandType.Text;
@@ -46,7 +46,7 @@ namespace WindowAdminHome
             if (this.conn.State == ConnectionState.Closed)
                 conn.Open();
             OracleCommand getEmps = conn.CreateCommand();
-            getEmps.CommandText = "SELECT DBUSERNAME, ACTION_NAME, OBJECT_NAME,SQL_TEXT FROM UNIFIED_AUDIT_TRAIL WHERE AUDIT_TYPE!='Standard' AND OBJECT_NAME like '" + Search.Text.ToUpper() + "%'";
+            getEmps.CommandText = "SELECT DBUSERNAME, ACTION_NAME, OBJECT_NAME,SQL_TEXT FROM UNIFIED_AUDIT_TRAIL WHERE AUDIT_TYPE='FineGrainedAudit' AND OBJECT_NAME like '" + Search.Text.ToUpper() + "%'";
 
             getEmps.CommandType = CommandType.Text;
             OracleDataReader reader = getEmps.ExecuteReader();

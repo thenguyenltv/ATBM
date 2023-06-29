@@ -254,9 +254,9 @@ namespace WindowAdminHome
                 string ChiNhanh = reader.GetString(12);
                 string LabelQLNV = reader.GetString(13);
 */
-                /*DataTable empDT = new DataTable();
+                DataTable empDT = new DataTable();
                 empDT.Load(reader);
-                Priv_List.DataSource = empDT;*/
+                Priv_List.DataSource = empDT;
 
 
             }
