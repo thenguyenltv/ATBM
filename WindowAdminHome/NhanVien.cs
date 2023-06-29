@@ -135,8 +135,29 @@ namespace WindowAdminHome
             notiPanel.Visible = true;
             notiPic.Visible = true;
             pictureBoxNoti2.Visible = true;
-        }
+            updateGrid();
 
+        }
+        private void updateGrid()
+        {
+            if (this.conn.State == ConnectionState.Closed)
+                conn.Open();
+            OracleCommand getEmps = conn.CreateCommand();
+            getEmps.CommandText = "SELECT NOIDUNG FROM OLS_TEST1.THONGBAO";
+            try
+            {
+                getEmps.CommandType = CommandType.Text;
+                OracleDataReader reader = getEmps.ExecuteReader();
+                DataTable empDT = new DataTable();
+                empDT.Load(reader);
+                dataGridView1.DataSource = empDT;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Nguoi dung khong co quyen truy cap! " + ex.Message);
+            }
+            conn.Close();
+        }
         private void pictureBoxNoti2_Click(object sender, EventArgs e)
         {
             notiPanel.Visible = false;
