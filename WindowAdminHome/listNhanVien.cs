@@ -198,7 +198,7 @@ namespace WindowAdminHome
             // Panel "Nhan Vien" hide
             panelNhanVien.Visible = false;
         }
-
+        
         private void updateGrid()
         {
             if (this.conn.State == ConnectionState.Closed)
@@ -209,44 +209,58 @@ namespace WindowAdminHome
             {
                 getEmps.CommandType = CommandType.Text;
                 OracleDataReader reader = getEmps.ExecuteReader();
-                /*BindingList<>
 
-                string MaNV = reader.GetString(0);
-                string TenNV = reader.GetString(1);
-                string Phai = reader.GetString(2);
-                string NgaySinh = reader.GetString(3);
-                string DiaChi = reader.GetString(4);
-                string SDT = reader.GetString(5);
-                string Luong = null;
-                string PhuCap = null;
+                //Priv_List.Rows.Add("MaNV", TenNV, Phai, NgaySinh, DiaChi, SDT, Luong, PhuCap, VaiTro, MaNQL, PHG, LinhVuc, ChiNhanh, LabelQLNV);
+                while(reader.Read()){
+                    string MaNV = reader.GetString(0);
+                    string TenNV = reader.GetString(1);
+                    string Phai = reader.GetString(2);
+                    string NgaySinh = reader.GetString(3);
+                    string DiaChi = reader.GetString(4);
+                    string SDT = reader.GetString(5);
+                    string Luong = null;
+                    string PhuCap = null;
 
-                RSA rsa = new RSA(512);
-                if (rsa.ImportPrivateKeyFromFile("../../../keys/" + MaNV + ".xml") == 1)
-                {
-                    if (!reader.IsDBNull(6))
+                    RSA rsa = new RSA(512);
+                    if (rsa.ImportPrivateKeyFromFile("../../../keys/" + MaNV + ".xml") == 1)
                     {
-                        long bufferSize = reader.GetBytes(6, 0, null, 0, 0); ;
-                        byte[] buffer = new byte[bufferSize];
-                        reader.GetBytes(6, 0, buffer, 0, (int)bufferSize);
-                        Luong = rsa.Decrypt(buffer);
-                    }
-                    else
-                    {
-                        Luong = "NULL";
-                    }
+                        if (!reader.IsDBNull(6))
+                        {
+                            long bufferSize = reader.GetBytes(6, 0, null, 0, 0); ;
+                            byte[] buffer = new byte[bufferSize];
+                            reader.GetBytes(6, 0, buffer, 0, (int)bufferSize);
+                            Luong = rsa.Decrypt(buffer);
+                        }
+                        else
+                        {
+                            Luong = "NULL";
+                        }
 
-                    if (!reader.IsDBNull(7))
-                    {
-                        long bufferSize = reader.GetBytes(7, 0, null, 0, 0);
-                        byte[] buffer = new byte[bufferSize];
-                        reader.GetBytes(7, 0, buffer, 0, (int)bufferSize);
-                        PhuCap = rsa.Decrypt(buffer);
+                        if (!reader.IsDBNull(7))
+                        {
+                            long bufferSize = reader.GetBytes(7, 0, null, 0, 0);
+                            byte[] buffer = new byte[bufferSize];
+                            reader.GetBytes(7, 0, buffer, 0, (int)bufferSize);
+                            PhuCap = rsa.Decrypt(buffer);
+                        }
+                        else
+                        {
+                            PhuCap = "NULL";
+                        }
                     }
-                    else
-                    {
-                        PhuCap = "NULL";
-                    }
+                    string VaiTro = reader.GetString(8);
+                    string MaNQL = reader.GetString(9);
+                    string PHG = reader.GetString(10);
+                    string LinhVuc = reader.GetString(11);
+                    string ChiNhanh = reader.GetString(12);
+                    string LabelQLNV = reader.GetString(13);          
+                    
+                    //DataTable empDT = new DataTable();
+                    //empDT.Load(reader);
+                    //Priv_List.DataSource = empDT;
+                    Priv_List.Rows.Insert(0, MaNV, TenNV, Phai, NgaySinh, DiaChi, SDT, Luong, PhuCap, VaiTro, MaNQL, PHG, LinhVuc, ChiNhanh, LabelQLNV);
                 }
+<<<<<<< HEAD
                 string VaiTro = reader.GetString(8);
                 string MaNQL = reader.GetString(9);
                 string PHG = reader.GetString(10);
@@ -258,6 +272,8 @@ namespace WindowAdminHome
                 empDT.Load(reader);
                 Priv_List.DataSource = empDT;
 
+=======
+>>>>>>> a602d33affcfe1d3798fd2a1a589c09a8c40ef34
 
             }
             catch (Exception ex)
