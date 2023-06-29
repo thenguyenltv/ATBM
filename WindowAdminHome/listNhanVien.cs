@@ -74,7 +74,7 @@ namespace WindowAdminHome
                     textPhoneMe.Visible = true;
                     labelBirthMe.Visible = true;
                     textBirth.Visible = true;
-                    panelMe.Visible = true;
+                    //panelMe.Visible = true;
                     break;
                 case "QUANLYTRUCTIEP":
                     // code here
@@ -88,7 +88,7 @@ namespace WindowAdminHome
                     textPhone.Visible = true;
                     labelBirth.Visible = true;
                     textBirth.Visible = true;
-                    panelMe.Visible = true;
+                    //panelMe.Visible = true;
                     break;
                 case "TRUONGPHONG":
                     // code here
@@ -102,7 +102,7 @@ namespace WindowAdminHome
                     textPhone.Visible = true;
                     labelBirth.Visible = true;
                     textBirth.Visible = true;
-                    panelMe.Visible = true;
+                    //panelMe.Visible = true;
                     break;
                 case "TAICHINH":
                     // code here
@@ -124,8 +124,8 @@ namespace WindowAdminHome
                     labelMaNV.Visible = true;
                     textMaNV.Visible=true;
                     btNhanVien.Enabled = true;
-                    panelNhanVien.Visible = true;
-                    panelMe.Visible = true;
+                    //panelNhanVien.Visible = true;
+                    //panelMe.Visible = true;
                     //
                     break;
                 case "NHANSU":
@@ -177,14 +177,14 @@ namespace WindowAdminHome
                     textPhone.Visible = true;
                     labelBirth.Visible = true;
                     textBirth.Visible = true;
-                    panelMe.Visible = true;
+                    //panelMe.Visible = true;
                     break;
                 case "BANGIAMDOC":
                     // code here
                     datagrid = nhanvien;
                     tab = "OLS_TEST1.NHANVIEN";
                     btMe.Enabled = false;
-                    panelMe.Visible = false;
+                    //panelMe.Visible = false;
                     break;
                 /*default:
                     // code here*/
@@ -201,8 +201,6 @@ namespace WindowAdminHome
             // Panel "Nhan Vien" hide
             panelNhanVien.Visible = false;
         }
-        
-        
 
         private void updateGrid()
         {
