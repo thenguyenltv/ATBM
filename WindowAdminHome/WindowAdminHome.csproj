@@ -91,6 +91,7 @@
     <Compile Include="ChildHome.Designer.cs">
       <DependentUpon>ChildHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cryptography.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -320,6 +321,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\notification2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\triangla.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.1\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.1\build\System.Text.Json.targets')" />

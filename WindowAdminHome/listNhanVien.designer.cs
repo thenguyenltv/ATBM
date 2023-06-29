@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace WindowAdminHome
 {
     partial class listNhanVien
@@ -66,22 +68,22 @@ namespace WindowAdminHome
             this.labelAddrMe = new System.Windows.Forms.Label();
             this.labelListStaff = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btNhanVien = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btMe = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.Priv_List)).BeginInit();
             this.panelNhanVien.SuspendLayout();
             this.panelMe.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Priv_List
@@ -529,6 +531,18 @@ namespace WindowAdminHome
             this.panel2.Size = new System.Drawing.Size(1159, 533);
             this.panel2.TabIndex = 41;
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.labelListStaff);
+            this.panel1.Location = new System.Drawing.Point(419, 0);
+            this.panel1.MinimumSize = new System.Drawing.Size(300, 60);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(736, 100);
+            this.panel1.TabIndex = 41;
+            // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -596,18 +610,6 @@ namespace WindowAdminHome
             this.btMe.UseVisualStyleBackColor = false;
             this.btMe.Click += new System.EventHandler(this.btMe_Click);
             // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.labelListStaff);
-            this.panel1.Location = new System.Drawing.Point(419, 0);
-            this.panel1.MinimumSize = new System.Drawing.Size(300, 60);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(736, 100);
-            this.panel1.TabIndex = 41;
-            // 
             // listNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -627,12 +629,12 @@ namespace WindowAdminHome
             this.panelMe.ResumeLayout(false);
             this.panelMe.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

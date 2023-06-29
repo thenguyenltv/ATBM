@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace WindowAdminHome
 {
     partial class NhanVien
@@ -47,10 +49,11 @@ namespace WindowAdminHome
             this.notiPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.btLogout = new System.Windows.Forms.Button();
             this.labelUser = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxNoti2 = new System.Windows.Forms.PictureBox();
             this.labelRole = new System.Windows.Forms.Label();
+            this.notiPic = new System.Windows.Forms.PictureBox();
             this.pictureNoti1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxNoti2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panelSideMenu.SuspendLayout();
@@ -58,9 +61,10 @@ namespace WindowAdminHome
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.notiPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNoti2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.notiPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureNoti1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNoti2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelTable
@@ -70,7 +74,7 @@ namespace WindowAdminHome
             this.PanelTable.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.PanelTable.Location = new System.Drawing.Point(197, 152);
             this.PanelTable.Name = "PanelTable";
-            this.PanelTable.Size = new System.Drawing.Size(1177, 551);
+            this.PanelTable.Size = new System.Drawing.Size(1166, 551);
             this.PanelTable.TabIndex = 2;
             this.PanelTable.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelTable_Paint);
             // 
@@ -276,10 +280,9 @@ namespace WindowAdminHome
             // 
             // notiPanel
             // 
-            this.notiPanel.BackColor = System.Drawing.Color.Black;
-            this.notiPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.notiPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
             this.notiPanel.Controls.Add(this.dataGridView1);
-            this.notiPanel.Location = new System.Drawing.Point(201, 136);
+            this.notiPanel.Location = new System.Drawing.Point(947, 145);
             this.notiPanel.Name = "notiPanel";
             this.notiPanel.Size = new System.Drawing.Size(335, 354);
             this.notiPanel.TabIndex = 0;
@@ -292,7 +295,7 @@ namespace WindowAdminHome
             this.btLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btLogout.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btLogout.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btLogout.Location = new System.Drawing.Point(1258, 96);
+            this.btLogout.Location = new System.Drawing.Point(1134, 100);
             this.btLogout.Name = "btLogout";
             this.btLogout.Size = new System.Drawing.Size(100, 30);
             this.btLogout.TabIndex = 24;
@@ -305,34 +308,11 @@ namespace WindowAdminHome
             this.labelUser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelUser.AutoSize = true;
             this.labelUser.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUser.Location = new System.Drawing.Point(1254, 65);
+            this.labelUser.Location = new System.Drawing.Point(1130, 69);
             this.labelUser.Name = "labelUser";
             this.labelUser.Size = new System.Drawing.Size(108, 23);
             this.labelUser.TabIndex = 26;
             this.labelUser.Text = "Username";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox2.Image = global::WindowAdminHome.Properties.Resources.user;
-            this.pictureBox2.Location = new System.Drawing.Point(1165, 65);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(87, 61);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 27;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBoxNoti2
-            // 
-            this.pictureBoxNoti2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxNoti2.Image = global::WindowAdminHome.Properties.Resources.notification2;
-            this.pictureBoxNoti2.Location = new System.Drawing.Point(197, 78);
-            this.pictureBoxNoti2.Name = "pictureBoxNoti2";
-            this.pictureBoxNoti2.Size = new System.Drawing.Size(38, 42);
-            this.pictureBoxNoti2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxNoti2.TabIndex = 30;
-            this.pictureBoxNoti2.TabStop = false;
-            this.pictureBoxNoti2.Click += new System.EventHandler(this.pictureBoxNoti2_Click);
             // 
             // labelRole
             // 
@@ -340,12 +320,22 @@ namespace WindowAdminHome
             this.labelRole.AutoSize = true;
             this.labelRole.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
             this.labelRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.labelRole.Location = new System.Drawing.Point(583, 83);
+            this.labelRole.Location = new System.Drawing.Point(525, 83);
             this.labelRole.Name = "labelRole";
             this.labelRole.Size = new System.Drawing.Size(95, 37);
             this.labelRole.TabIndex = 25;
             this.labelRole.Text = "Role: ";
             this.labelRole.Click += new System.EventHandler(this.labelRole_Click);
+            // 
+            // notiPic
+            // 
+            this.notiPic.Image = global::WindowAdminHome.Properties.Resources.triangla;
+            this.notiPic.Location = new System.Drawing.Point(1251, 128);
+            this.notiPic.Name = "notiPic";
+            this.notiPic.Size = new System.Drawing.Size(25, 20);
+            this.notiPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.notiPic.TabIndex = 31;
+            this.notiPic.TabStop = false;
             // 
             // pictureNoti1
             // 
@@ -354,12 +344,36 @@ namespace WindowAdminHome
             this.pictureNoti1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureNoti1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pictureNoti1.Image = global::WindowAdminHome.Properties.Resources.notification;
-            this.pictureNoti1.Location = new System.Drawing.Point(197, 78);
+            this.pictureNoti1.Location = new System.Drawing.Point(1244, 83);
             this.pictureNoti1.Name = "pictureNoti1";
             this.pictureNoti1.Size = new System.Drawing.Size(38, 42);
             this.pictureNoti1.TabIndex = 28;
             this.pictureNoti1.TabStop = false;
             this.pictureNoti1.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBoxNoti2
+            // 
+            this.pictureBoxNoti2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxNoti2.Image = global::WindowAdminHome.Properties.Resources.notification2;
+            this.pictureBoxNoti2.Location = new System.Drawing.Point(1244, 83);
+            this.pictureBoxNoti2.Name = "pictureBoxNoti2";
+            this.pictureBoxNoti2.Size = new System.Drawing.Size(38, 42);
+            this.pictureBoxNoti2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxNoti2.TabIndex = 30;
+            this.pictureBoxNoti2.TabStop = false;
+            this.pictureBoxNoti2.Click += new System.EventHandler(this.pictureBoxNoti2_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pictureBox2.Image = global::WindowAdminHome.Properties.Resources.user;
+            this.pictureBox2.Location = new System.Drawing.Point(1287, 69);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(87, 61);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 27;
+            this.pictureBox2.TabStop = false;
             // 
             // NhanVien
             // 
@@ -367,8 +381,9 @@ namespace WindowAdminHome
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1375, 707);
-            this.Controls.Add(this.notiPanel);
             this.Controls.Add(this.pictureNoti1);
+            this.Controls.Add(this.notiPanel);
+            this.Controls.Add(this.notiPic);
             this.Controls.Add(this.labelRole);
             this.Controls.Add(this.PanelTable);
             this.Controls.Add(this.panelSideMenu);
@@ -377,7 +392,7 @@ namespace WindowAdminHome
             this.Controls.Add(this.labelUser);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btLogout);
-            this.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.MinimumSize = new System.Drawing.Size(1000, 750);
             this.Name = "NhanVien";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -391,9 +406,10 @@ namespace WindowAdminHome
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.notiPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNoti2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.notiPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureNoti1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxNoti2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -421,6 +437,7 @@ namespace WindowAdminHome
         private System.Windows.Forms.PictureBox pictureBoxNoti2;
         private System.Windows.Forms.Label labelRole;
         private System.Windows.Forms.PictureBox pictureNoti1;
+        private System.Windows.Forms.PictureBox notiPic;
     }
 }
 

@@ -21,6 +21,7 @@ namespace WindowAdminHome
         {
             this.conn = conn;
             InitializeComponent();
+
             labelRole.Text = "Role: " + role;
             if(username.Length  <= 6)
                 labelUser.Text = username;
@@ -36,6 +37,7 @@ namespace WindowAdminHome
         {
             panelSubList.Visible = false;
             notiPanel.Visible = false;
+            notiPic.Visible = false;
             pictureBoxNoti2.Visible = false;
         }
 
@@ -129,16 +131,19 @@ namespace WindowAdminHome
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            notiPanel.Visible = true;
             pictureNoti1.Visible = false;
+
+            notiPanel.Visible = true;
+            notiPic.Visible = true;
             pictureBoxNoti2.Visible = true;
         }
 
         private void pictureBoxNoti2_Click(object sender, EventArgs e)
         {
-            if(notiPanel.Visible)
-                notiPanel.Visible = false;
+            notiPanel.Visible = false;
             pictureBoxNoti2.Visible = false;
+
+            notiPic.Visible = false;
             pictureNoti1.Visible = true;
         }
 

@@ -23,6 +23,10 @@ namespace WindowAdminHome
         {
             InitializeComponent();
             customDesign();
+            foreach (Control control in Controls)
+            {
+                control.Cursor = Cursors.Arrow;
+            }
             string v_nhanvien_nhanvien = "SELECT *  FROM OLS_TEST1.V_NHANVIEN_NHANVIEN ORDER BY 1";
             string v_nhanvien = "SELECT * FROM OLS_TEST1.V_NHANVIEN ORDER BY 1";
             string nhanvien = "SELECT * FROM OLS_TEST1.NHANVIEN ORDER BY 1";
@@ -62,7 +66,6 @@ namespace WindowAdminHome
             switch (role)
             {
                 case "NHANVIEN":
-                    // code here
                     datagrid = v_nhanvien_nhanvien;
                     tab = "OLS_TEST1.V_NHANVIEN_NHANVIEN";
                     //MessageBox.Show("dddd");
@@ -74,7 +77,6 @@ namespace WindowAdminHome
                     textPhoneMe.Visible = true;
                     labelBirthMe.Visible = true;
                     textBirth.Visible = true;
-                    panelMe.Visible = true;
                     break;
                 case "QUANLYTRUCTIEP":
                     // code here
@@ -88,7 +90,6 @@ namespace WindowAdminHome
                     textPhone.Visible = true;
                     labelBirth.Visible = true;
                     textBirth.Visible = true;
-                    panelMe.Visible = true;
                     break;
                 case "TRUONGPHONG":
                     // code here
@@ -102,7 +103,6 @@ namespace WindowAdminHome
                     textPhone.Visible = true;
                     labelBirth.Visible = true;
                     textBirth.Visible = true;
-                    panelMe.Visible = true;
                     break;
                 case "TAICHINH":
                     // code here
@@ -124,8 +124,6 @@ namespace WindowAdminHome
                     labelMaNV.Visible = true;
                     textMaNV.Visible=true;
                     btNhanVien.Enabled = true;
-                    panelNhanVien.Visible = true;
-                    panelMe.Visible = true;
                     //
                     break;
                 case "NHANSU":
@@ -177,7 +175,6 @@ namespace WindowAdminHome
                     textPhone.Visible = true;
                     labelBirth.Visible = true;
                     textBirth.Visible = true;
-                    panelMe.Visible = true;
                     break;
                 case "BANGIAMDOC":
                     // code here
@@ -201,8 +198,6 @@ namespace WindowAdminHome
             // Panel "Nhan Vien" hide
             panelNhanVien.Visible = false;
         }
-        
-        
 
         private void updateGrid()
         {
@@ -214,9 +209,56 @@ namespace WindowAdminHome
             {
                 getEmps.CommandType = CommandType.Text;
                 OracleDataReader reader = getEmps.ExecuteReader();
-                DataTable empDT = new DataTable();
+                /*BindingList<>
+
+                string MaNV = reader.GetString(0);
+                string TenNV = reader.GetString(1);
+                string Phai = reader.GetString(2);
+                string NgaySinh = reader.GetString(3);
+                string DiaChi = reader.GetString(4);
+                string SDT = reader.GetString(5);
+                string Luong = null;
+                string PhuCap = null;
+
+                RSA rsa = new RSA(512);
+                if (rsa.ImportPrivateKeyFromFile("../../../keys/" + MaNV + ".xml") == 1)
+                {
+                    if (!reader.IsDBNull(6))
+                    {
+                        long bufferSize = reader.GetBytes(6, 0, null, 0, 0); ;
+                        byte[] buffer = new byte[bufferSize];
+                        reader.GetBytes(6, 0, buffer, 0, (int)bufferSize);
+                        Luong = rsa.Decrypt(buffer);
+                    }
+                    else
+                    {
+                        Luong = "NULL";
+                    }
+
+                    if (!reader.IsDBNull(7))
+                    {
+                        long bufferSize = reader.GetBytes(7, 0, null, 0, 0);
+                        byte[] buffer = new byte[bufferSize];
+                        reader.GetBytes(7, 0, buffer, 0, (int)bufferSize);
+                        PhuCap = rsa.Decrypt(buffer);
+                    }
+                    else
+                    {
+                        PhuCap = "NULL";
+                    }
+                }
+                string VaiTro = reader.GetString(8);
+                string MaNQL = reader.GetString(9);
+                string PHG = reader.GetString(10);
+                string LinhVuc = reader.GetString(11);
+                string ChiNhanh = reader.GetString(12);
+                string LabelQLNV = reader.GetString(13);
+*/
+                /*DataTable empDT = new DataTable();
                 empDT.Load(reader);
-                Priv_List.DataSource = empDT;
+                Priv_List.DataSource = empDT;*/
+
+
             }
             catch (Exception ex)
             {
