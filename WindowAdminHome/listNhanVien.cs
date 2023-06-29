@@ -211,18 +211,20 @@ namespace WindowAdminHome
                 OracleDataReader reader = getEmps.ExecuteReader();
 
                 //Priv_List.Rows.Add("MaNV", TenNV, Phai, NgaySinh, DiaChi, SDT, Luong, PhuCap, VaiTro, MaNQL, PHG, LinhVuc, ChiNhanh, LabelQLNV);
+                int rowIndex = 0;
                 while(reader.Read()){
-                    string MaNV = reader.GetString(0);
-                    string TenNV = reader.GetString(1);
-                    string Phai = reader.GetString(2);
-                    string NgaySinh = reader.GetString(3);
-                    string DiaChi = reader.GetString(4);
-                    string SDT = reader.GetString(5);
-                    string Luong = null;
-                    string PhuCap = null;
+                    rowIndex++;
+                    string MaNV = reader.IsDBNull(0) ? "NULL" : reader.GetString(0);
+                    string TenNV = reader.IsDBNull(1) ? "NULL" : reader.GetString(1);
+                    string Phai = reader.IsDBNull(2) ? "NULL" : reader.GetString(2);
+                    string NgaySinh = reader.IsDBNull(3) ? "NULL" : reader.GetString(3);
+                    string DiaChi = reader.IsDBNull(4) ? "NULL" : reader.GetString(4);
+                    string SDT = reader.IsDBNull(5) ? "NULL" : reader.GetString(5);
+                    string Luong = "NULL";
+                    string PhuCap = "NULL";
 
                     RSA rsa = new RSA(512);
-                    if (rsa.ImportPrivateKeyFromFile("../../../keys/" + MaNV + ".xml") == 1)
+                    if (rsa.ImportPrivateKeyFromFile("../../keys/" + MaNV + ".xml") == 1)
                     {
                         if (!reader.IsDBNull(6))
                         {
@@ -248,33 +250,17 @@ namespace WindowAdminHome
                             PhuCap = "NULL";
                         }
                     }
-                    string VaiTro = reader.GetString(8);
-                    string MaNQL = reader.GetString(9);
-                    string PHG = reader.GetString(10);
-                    string LinhVuc = reader.GetString(11);
-                    string ChiNhanh = reader.GetString(12);
-                    string LabelQLNV = reader.GetString(13);          
-                    
+                    string VaiTro = reader.IsDBNull(8) ? "NULL" : reader.GetString(8);
+                    string MaNQL = reader.IsDBNull(9) ? "NULL" : reader.GetString(9);
+                    string PHG = reader.IsDBNull(10) ? "NULL" : reader.GetString(10);
+
                     //DataTable empDT = new DataTable();
                     //empDT.Load(reader);
                     //Priv_List.DataSource = empDT;
-                    Priv_List.Rows.Insert(0, MaNV, TenNV, Phai, NgaySinh, DiaChi, SDT, Luong, PhuCap, VaiTro, MaNQL, PHG, LinhVuc, ChiNhanh, LabelQLNV);
+       
+                    string[] rows = new string[] { MaNV, TenNV, Phai, NgaySinh, DiaChi, SDT, Luong, PhuCap, VaiTro, MaNQL, PHG };
+                    Priv_List.Rows.Add(rows);
                 }
-<<<<<<< HEAD
-                string VaiTro = reader.GetString(8);
-                string MaNQL = reader.GetString(9);
-                string PHG = reader.GetString(10);
-                string LinhVuc = reader.GetString(11);
-                string ChiNhanh = reader.GetString(12);
-                string LabelQLNV = reader.GetString(13);
-*/
-                DataTable empDT = new DataTable();
-                empDT.Load(reader);
-                Priv_List.DataSource = empDT;
-
-=======
->>>>>>> a602d33affcfe1d3798fd2a1a589c09a8c40ef34
-
             }
             catch (Exception ex)
             {

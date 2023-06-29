@@ -42,12 +42,15 @@ namespace WindowAdminHome
             this.labelMaDA = new System.Windows.Forms.Label();
             this.labelListAssignment = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Priv_List)).BeginInit();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Priv_List
             // 
+            this.Priv_List.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Priv_List.BackgroundColor = System.Drawing.SystemColors.Control;
             this.Priv_List.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Priv_List.GridColor = System.Drawing.SystemColors.Control;
@@ -55,7 +58,7 @@ namespace WindowAdminHome
             this.Priv_List.Name = "Priv_List";
             this.Priv_List.RowHeadersWidth = 51;
             this.Priv_List.RowTemplate.Height = 24;
-            this.Priv_List.Size = new System.Drawing.Size(693, 397);
+            this.Priv_List.Size = new System.Drawing.Size(703, 402);
             this.Priv_List.TabIndex = 0;
             // 
             // labelMaNV
@@ -75,6 +78,7 @@ namespace WindowAdminHome
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.textTime);
             this.panel1.Controls.Add(this.textMaNV);
             this.panel1.Controls.Add(this.textMaDA);
@@ -87,7 +91,7 @@ namespace WindowAdminHome
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(421, 533);
+            this.panel1.Size = new System.Drawing.Size(438, 533);
             this.panel1.TabIndex = 38;
             // 
             // textTime
@@ -116,7 +120,7 @@ namespace WindowAdminHome
             // btDelete
             // 
             this.btDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDelete.Location = new System.Drawing.Point(220, 492);
+            this.btDelete.Location = new System.Drawing.Point(296, 490);
             this.btDelete.Name = "btDelete";
             this.btDelete.Size = new System.Drawing.Size(77, 29);
             this.btDelete.TabIndex = 59;
@@ -127,7 +131,7 @@ namespace WindowAdminHome
             // btAdd
             // 
             this.btAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btAdd.Location = new System.Drawing.Point(31, 492);
+            this.btAdd.Location = new System.Drawing.Point(42, 490);
             this.btAdd.Name = "btAdd";
             this.btAdd.Size = new System.Drawing.Size(77, 29);
             this.btAdd.TabIndex = 58;
@@ -138,7 +142,7 @@ namespace WindowAdminHome
             // btUpdate
             // 
             this.btUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btUpdate.Location = new System.Drawing.Point(123, 492);
+            this.btUpdate.Location = new System.Drawing.Point(169, 490);
             this.btUpdate.Name = "btUpdate";
             this.btUpdate.Size = new System.Drawing.Size(77, 29);
             this.btUpdate.TabIndex = 56;
@@ -176,10 +180,11 @@ namespace WindowAdminHome
             // 
             // labelListAssignment
             // 
+            this.labelListAssignment.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.labelListAssignment.AutoSize = true;
             this.labelListAssignment.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.labelListAssignment.ForeColor = System.Drawing.Color.Black;
-            this.labelListAssignment.Location = new System.Drawing.Point(680, 47);
+            this.labelListAssignment.Location = new System.Drawing.Point(645, 45);
             this.labelListAssignment.Name = "labelListAssignment";
             this.labelListAssignment.Size = new System.Drawing.Size(306, 32);
             this.labelListAssignment.TabIndex = 40;
@@ -188,11 +193,23 @@ namespace WindowAdminHome
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.labelListAssignment);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1159, 533);
             this.panel2.TabIndex = 41;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(64, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(281, 32);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Thao tác Chính sách";
             // 
             // listPhanCong
             // 
@@ -201,20 +218,21 @@ namespace WindowAdminHome
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(1159, 533);
             this.ControlBox = false;
-            this.Controls.Add(this.labelListAssignment);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Priv_List);
             this.Controls.Add(this.panel2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(783, 542);
             this.Name = "listPhanCong";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
             ((System.ComponentModel.ISupportInitialize)(this.Priv_List)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -232,5 +250,6 @@ namespace WindowAdminHome
         private System.Windows.Forms.ComboBox textMaDA;
         private System.Windows.Forms.ComboBox textMaNV;
         private System.Windows.Forms.DateTimePicker textTime;
+        private System.Windows.Forms.Label label1;
     }
 }

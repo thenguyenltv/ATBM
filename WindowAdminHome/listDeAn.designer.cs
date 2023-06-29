@@ -44,6 +44,7 @@ namespace WindowAdminHome
             this.textMaDa = new System.Windows.Forms.TextBox();
             this.labelListProject = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Priv_List)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -51,14 +52,18 @@ namespace WindowAdminHome
             // 
             // Priv_List
             // 
+            this.Priv_List.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Priv_List.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Priv_List.BackgroundColor = System.Drawing.SystemColors.Control;
             this.Priv_List.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Priv_List.GridColor = System.Drawing.SystemColors.Control;
-            this.Priv_List.Location = new System.Drawing.Point(20, 124);
+            this.Priv_List.Location = new System.Drawing.Point(4, 124);
             this.Priv_List.Name = "Priv_List";
             this.Priv_List.RowHeadersWidth = 51;
             this.Priv_List.RowTemplate.Height = 24;
-            this.Priv_List.Size = new System.Drawing.Size(693, 397);
+            this.Priv_List.Size = new System.Drawing.Size(720, 399);
             this.Priv_List.TabIndex = 0;
             // 
             // labelTenDa
@@ -85,6 +90,7 @@ namespace WindowAdminHome
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.textNgayBD);
             this.panel1.Controls.Add(this.textPhong);
             this.panel1.Controls.Add(this.btDelete);
@@ -98,6 +104,7 @@ namespace WindowAdminHome
             this.panel1.Controls.Add(this.textMaDa);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.MinimumSize = new System.Drawing.Size(411, 459);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(421, 533);
             this.panel1.TabIndex = 38;
@@ -119,6 +126,7 @@ namespace WindowAdminHome
             // 
             // btDelete
             // 
+            this.btDelete.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btDelete.Location = new System.Drawing.Point(297, 494);
             this.btDelete.Name = "btDelete";
@@ -130,6 +138,7 @@ namespace WindowAdminHome
             // 
             // btAdd
             // 
+            this.btAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btAdd.Location = new System.Drawing.Point(45, 494);
             this.btAdd.Name = "btAdd";
@@ -141,6 +150,7 @@ namespace WindowAdminHome
             // 
             // btUpdate
             // 
+            this.btUpdate.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btUpdate.Location = new System.Drawing.Point(171, 494);
             this.btUpdate.Name = "btUpdate";
@@ -202,10 +212,11 @@ namespace WindowAdminHome
             // 
             // labelListProject
             // 
+            this.labelListProject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.labelListProject.AutoSize = true;
             this.labelListProject.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.labelListProject.ForeColor = System.Drawing.Color.Black;
-            this.labelListProject.Location = new System.Drawing.Point(243, 52);
+            this.labelListProject.Location = new System.Drawing.Point(243, 45);
             this.labelListProject.Name = "labelListProject";
             this.labelListProject.Size = new System.Drawing.Size(238, 32);
             this.labelListProject.TabIndex = 40;
@@ -222,6 +233,17 @@ namespace WindowAdminHome
             this.panel2.Size = new System.Drawing.Size(738, 533);
             this.panel2.TabIndex = 41;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(64, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(281, 32);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "Thao tác Chính sách";
+            // 
             // listDeAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -233,6 +255,7 @@ namespace WindowAdminHome
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(783, 542);
             this.Name = "listDeAn";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
@@ -261,5 +284,6 @@ namespace WindowAdminHome
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox textPhong;
         private System.Windows.Forms.DateTimePicker textNgayBD;
+        private System.Windows.Forms.Label label1;
     }
 }

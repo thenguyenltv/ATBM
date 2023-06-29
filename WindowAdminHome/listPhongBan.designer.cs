@@ -42,25 +42,31 @@ namespace WindowAdminHome
             this.textMaPB = new System.Windows.Forms.TextBox();
             this.labelListZoom = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Priv_List)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Priv_List
             // 
+            this.Priv_List.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Priv_List.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Priv_List.BackgroundColor = System.Drawing.SystemColors.Control;
             this.Priv_List.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Priv_List.GridColor = System.Drawing.SystemColors.Control;
-            this.Priv_List.Location = new System.Drawing.Point(444, 126);
+            this.Priv_List.Location = new System.Drawing.Point(427, 126);
             this.Priv_List.Name = "Priv_List";
             this.Priv_List.RowHeadersWidth = 51;
             this.Priv_List.RowTemplate.Height = 24;
-            this.Priv_List.Size = new System.Drawing.Size(693, 397);
+            this.Priv_List.Size = new System.Drawing.Size(720, 402);
             this.Priv_List.TabIndex = 0;
             // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.textTrgPhg);
             this.panel1.Controls.Add(this.btDelete);
             this.panel1.Controls.Add(this.btAdd);
@@ -86,8 +92,10 @@ namespace WindowAdminHome
             // 
             // btDelete
             // 
+            this.btDelete.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btDelete.Location = new System.Drawing.Point(218, 492);
+            this.btDelete.Location = new System.Drawing.Point(294, 492);
             this.btDelete.Name = "btDelete";
             this.btDelete.Size = new System.Drawing.Size(77, 29);
             this.btDelete.TabIndex = 69;
@@ -97,8 +105,10 @@ namespace WindowAdminHome
             // 
             // btAdd
             // 
+            this.btAdd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btAdd.Location = new System.Drawing.Point(29, 492);
+            this.btAdd.Location = new System.Drawing.Point(40, 492);
             this.btAdd.Name = "btAdd";
             this.btAdd.Size = new System.Drawing.Size(77, 29);
             this.btAdd.TabIndex = 68;
@@ -108,8 +118,10 @@ namespace WindowAdminHome
             // 
             // btUpdate
             // 
+            this.btUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btUpdate.Location = new System.Drawing.Point(121, 492);
+            this.btUpdate.Location = new System.Drawing.Point(168, 492);
             this.btUpdate.Name = "btUpdate";
             this.btUpdate.Size = new System.Drawing.Size(77, 29);
             this.btUpdate.TabIndex = 66;
@@ -175,10 +187,11 @@ namespace WindowAdminHome
             // 
             // labelListZoom
             // 
+            this.labelListZoom.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.labelListZoom.AutoSize = true;
             this.labelListZoom.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.labelListZoom.ForeColor = System.Drawing.Color.Black;
-            this.labelListZoom.Location = new System.Drawing.Point(680, 47);
+            this.labelListZoom.Location = new System.Drawing.Point(645, 45);
             this.labelListZoom.Name = "labelListZoom";
             this.labelListZoom.Size = new System.Drawing.Size(307, 32);
             this.labelListZoom.TabIndex = 40;
@@ -193,6 +206,17 @@ namespace WindowAdminHome
             this.panel2.Size = new System.Drawing.Size(1159, 533);
             this.panel2.TabIndex = 41;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(64, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(281, 32);
+            this.label1.TabIndex = 71;
+            this.label1.Text = "Thao tác Chính sách";
+            // 
             // listPhongBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -206,6 +230,7 @@ namespace WindowAdminHome
             this.Controls.Add(this.panel2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(783, 542);
             this.Name = "listPhongBan";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
@@ -231,5 +256,6 @@ namespace WindowAdminHome
         private System.Windows.Forms.TextBox textMaPB;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox textTrgPhg;
+        private System.Windows.Forms.Label label1;
     }
 }

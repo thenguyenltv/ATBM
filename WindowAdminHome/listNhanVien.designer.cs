@@ -75,6 +75,17 @@ namespace WindowAdminHome
             this.btNhanVien = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btMe = new System.Windows.Forms.Button();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgaySinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Luong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PhuCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.VaiTro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNQL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PHG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Priv_List)).BeginInit();
             this.panelNhanVien.SuspendLayout();
             this.panelMe.SuspendLayout();
@@ -91,14 +102,27 @@ namespace WindowAdminHome
             this.Priv_List.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.Priv_List.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Priv_List.BackgroundColor = System.Drawing.SystemColors.Control;
             this.Priv_List.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Priv_List.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaNV,
+            this.TenNV,
+            this.Phai,
+            this.NgaySinh,
+            this.DiaChi,
+            this.SDT,
+            this.Luong,
+            this.PhuCap,
+            this.VaiTro,
+            this.MaNQL,
+            this.PHG});
             this.Priv_List.GridColor = System.Drawing.SystemColors.Control;
             this.Priv_List.Location = new System.Drawing.Point(425, 106);
             this.Priv_List.Name = "Priv_List";
             this.Priv_List.RowHeadersWidth = 51;
             this.Priv_List.RowTemplate.Height = 24;
-            this.Priv_List.Size = new System.Drawing.Size(720, 413);
+            this.Priv_List.Size = new System.Drawing.Size(813, 413);
             this.Priv_List.TabIndex = 0;
             this.Priv_List.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Priv_List_CellContentClick);
             this.Priv_List.SelectionChanged += new System.EventHandler(this.Priv_List_SelectionChanged);
@@ -512,7 +536,7 @@ namespace WindowAdminHome
             this.labelListStaff.AutoSize = true;
             this.labelListStaff.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.labelListStaff.ForeColor = System.Drawing.Color.Black;
-            this.labelListStaff.Location = new System.Drawing.Point(217, 29);
+            this.labelListStaff.Location = new System.Drawing.Point(263, 40);
             this.labelListStaff.Name = "labelListStaff";
             this.labelListStaff.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelListStaff.Size = new System.Drawing.Size(290, 32);
@@ -528,7 +552,7 @@ namespace WindowAdminHome
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1159, 533);
+            this.panel2.Size = new System.Drawing.Size(1252, 533);
             this.panel2.TabIndex = 41;
             // 
             // panel1
@@ -540,7 +564,7 @@ namespace WindowAdminHome
             this.panel1.Location = new System.Drawing.Point(419, 0);
             this.panel1.MinimumSize = new System.Drawing.Size(300, 60);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(736, 100);
+            this.panel1.Size = new System.Drawing.Size(829, 100);
             this.panel1.TabIndex = 41;
             // 
             // panel3
@@ -610,12 +634,78 @@ namespace WindowAdminHome
             this.btMe.UseVisualStyleBackColor = false;
             this.btMe.Click += new System.EventHandler(this.btMe_Click);
             // 
+            // MaNV
+            // 
+            this.MaNV.HeaderText = "Mã NV";
+            this.MaNV.MinimumWidth = 6;
+            this.MaNV.Name = "MaNV";
+            // 
+            // TenNV
+            // 
+            this.TenNV.HeaderText = "Tên NV";
+            this.TenNV.MinimumWidth = 6;
+            this.TenNV.Name = "TenNV";
+            // 
+            // Phai
+            // 
+            this.Phai.HeaderText = "Giới tính";
+            this.Phai.MinimumWidth = 6;
+            this.Phai.Name = "Phai";
+            // 
+            // NgaySinh
+            // 
+            this.NgaySinh.HeaderText = "Ngày Sinh";
+            this.NgaySinh.MinimumWidth = 6;
+            this.NgaySinh.Name = "NgaySinh";
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            // 
+            // SDT
+            // 
+            this.SDT.HeaderText = "SDT";
+            this.SDT.MinimumWidth = 6;
+            this.SDT.Name = "SDT";
+            // 
+            // Luong
+            // 
+            this.Luong.HeaderText = "Lương";
+            this.Luong.MinimumWidth = 6;
+            this.Luong.Name = "Luong";
+            // 
+            // PhuCap
+            // 
+            this.PhuCap.HeaderText = "Phụ cấp";
+            this.PhuCap.MinimumWidth = 6;
+            this.PhuCap.Name = "PhuCap";
+            // 
+            // VaiTro
+            // 
+            this.VaiTro.HeaderText = "Vai trò";
+            this.VaiTro.MinimumWidth = 6;
+            this.VaiTro.Name = "VaiTro";
+            // 
+            // MaNQL
+            // 
+            this.MaNQL.HeaderText = "Mã NQL";
+            this.MaNQL.MinimumWidth = 6;
+            this.MaNQL.Name = "MaNQL";
+            // 
+            // PHG
+            // 
+            this.PHG.HeaderText = "PHG";
+            this.PHG.MinimumWidth = 6;
+            this.PHG.Name = "PHG";
+            // 
             // listNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(1159, 533);
+            this.ClientSize = new System.Drawing.Size(1252, 533);
             this.ControlBox = false;
             this.Controls.Add(this.panel2);
             this.MaximizeBox = false;
@@ -684,5 +774,16 @@ namespace WindowAdminHome
         private System.Windows.Forms.TextBox textPhoneMe;
         private System.Windows.Forms.DateTimePicker textBirth;
         private System.Windows.Forms.Panel panel1;
+        private DataGridViewTextBoxColumn MaNV;
+        private DataGridViewTextBoxColumn TenNV;
+        private DataGridViewTextBoxColumn Phai;
+        private DataGridViewTextBoxColumn NgaySinh;
+        private DataGridViewTextBoxColumn DiaChi;
+        private DataGridViewTextBoxColumn SDT;
+        private DataGridViewTextBoxColumn Luong;
+        private DataGridViewTextBoxColumn PhuCap;
+        private DataGridViewTextBoxColumn VaiTro;
+        private DataGridViewTextBoxColumn MaNQL;
+        private DataGridViewTextBoxColumn PHG;
     }
 }
