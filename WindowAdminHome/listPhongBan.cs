@@ -56,7 +56,7 @@ namespace WindowAdminHome
                     btDelete.Enabled = true;
                     btUpdate.Visible = true;
                     btAdd.Visible = true;
-                    btDelete.Visible = true;
+                    //btDelete.Visible = true;
                     labelMaPB.Visible = true;
                     labelTenPB.Visible = true;
                     labelLead.Visible = true;

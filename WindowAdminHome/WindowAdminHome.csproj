@@ -91,6 +91,7 @@
     <Compile Include="ChildHome.Designer.cs">
       <DependentUpon>ChildHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cryptography.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

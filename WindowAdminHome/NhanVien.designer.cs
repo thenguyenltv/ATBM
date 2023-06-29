@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace WindowAdminHome
 {
     partial class NhanVien
@@ -279,9 +281,8 @@ namespace WindowAdminHome
             // notiPanel
             // 
             this.notiPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.notiPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.notiPanel.Controls.Add(this.dataGridView1);
-            this.notiPanel.Location = new System.Drawing.Point(947, 148);
+            this.notiPanel.Location = new System.Drawing.Point(947, 145);
             this.notiPanel.Name = "notiPanel";
             this.notiPanel.Size = new System.Drawing.Size(335, 354);
             this.notiPanel.TabIndex = 0;
@@ -319,7 +320,7 @@ namespace WindowAdminHome
             this.labelRole.AutoSize = true;
             this.labelRole.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
             this.labelRole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.labelRole.Location = new System.Drawing.Point(583, 83);
+            this.labelRole.Location = new System.Drawing.Point(525, 83);
             this.labelRole.Name = "labelRole";
             this.labelRole.Size = new System.Drawing.Size(95, 37);
             this.labelRole.TabIndex = 25;
@@ -329,7 +330,7 @@ namespace WindowAdminHome
             // notiPic
             // 
             this.notiPic.Image = global::WindowAdminHome.Properties.Resources.triangla;
-            this.notiPic.Location = new System.Drawing.Point(1251, 132);
+            this.notiPic.Location = new System.Drawing.Point(1251, 128);
             this.notiPic.Name = "notiPic";
             this.notiPic.Size = new System.Drawing.Size(25, 20);
             this.notiPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -365,6 +366,7 @@ namespace WindowAdminHome
             // pictureBox2
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pictureBox2.Image = global::WindowAdminHome.Properties.Resources.user;
             this.pictureBox2.Location = new System.Drawing.Point(1287, 69);
             this.pictureBox2.Name = "pictureBox2";
@@ -390,7 +392,7 @@ namespace WindowAdminHome
             this.Controls.Add(this.labelUser);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btLogout);
-            this.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.MinimumSize = new System.Drawing.Size(1000, 750);
             this.Name = "NhanVien";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;

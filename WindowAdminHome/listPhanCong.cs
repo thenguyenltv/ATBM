@@ -70,7 +70,7 @@ namespace WindowAdminHome
                     // code here
                     break;
                 case "NHANSU":
-                    datagrid = phancong;
+                    datagrid = v_nhanvien_phancong;
                     // code here
                     break;
                 case "TRUONGDEAN":
