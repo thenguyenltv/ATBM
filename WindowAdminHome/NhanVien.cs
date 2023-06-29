@@ -142,6 +142,16 @@ namespace WindowAdminHome
             pictureNoti1.Visible = true;
         }
 
+        private void labelRole_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         /*//Cap nhat listNV vao notice
         private void updateGrid()
         {

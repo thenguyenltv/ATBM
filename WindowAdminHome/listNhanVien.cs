@@ -202,6 +202,8 @@ namespace WindowAdminHome
             panelNhanVien.Visible = false;
         }
         
+        
+
         private void updateGrid()
         {
             if (this.conn.State == ConnectionState.Closed)
@@ -446,6 +448,11 @@ namespace WindowAdminHome
         }
 
         private void textBirth_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelNhanVien_Paint(object sender, PaintEventArgs e)
         {
 
         }

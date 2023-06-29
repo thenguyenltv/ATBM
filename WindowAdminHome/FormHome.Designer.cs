@@ -193,7 +193,7 @@ namespace WindowAdminHome
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 52);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(191, 451);
+            this.panelSideMenu.Size = new System.Drawing.Size(191, 519);
             this.panelSideMenu.TabIndex = 22;
             // 
             // panelSubPrivs
@@ -501,7 +501,7 @@ namespace WindowAdminHome
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1006, 503);
+            this.ClientSize = new System.Drawing.Size(1006, 571);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.labelUser);
             this.Controls.Add(this.labelRole);

@@ -32,6 +32,7 @@ namespace WindowAdminHome
             this.Priv_List = new System.Windows.Forms.DataGridView();
             this.labelVaiTro = new System.Windows.Forms.Label();
             this.panelNhanVien = new System.Windows.Forms.Panel();
+            this.textBirth = new System.Windows.Forms.DateTimePicker();
             this.textVaiTro = new System.Windows.Forms.ComboBox();
             this.textPhg = new System.Windows.Forms.ComboBox();
             this.btDelete = new System.Windows.Forms.Button();
@@ -56,9 +57,11 @@ namespace WindowAdminHome
             this.textAddr = new System.Windows.Forms.TextBox();
             this.labelAddr = new System.Windows.Forms.Label();
             this.panelMe = new System.Windows.Forms.Panel();
+            this.textBirthMe = new System.Windows.Forms.DateTimePicker();
             this.button3 = new System.Windows.Forms.Button();
             this.labelPhoneMe = new System.Windows.Forms.Label();
             this.labelBirthMe = new System.Windows.Forms.Label();
+            this.textPhoneMe = new System.Windows.Forms.TextBox();
             this.textAddrMe = new System.Windows.Forms.TextBox();
             this.labelAddrMe = new System.Windows.Forms.Label();
             this.labelListStaff = new System.Windows.Forms.Label();
@@ -69,9 +72,7 @@ namespace WindowAdminHome
             this.btNhanVien = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btMe = new System.Windows.Forms.Button();
-            this.textBirthMe = new System.Windows.Forms.DateTimePicker();
-            this.textPhoneMe = new System.Windows.Forms.TextBox();
-            this.textBirth = new System.Windows.Forms.DateTimePicker();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.Priv_List)).BeginInit();
             this.panelNhanVien.SuspendLayout();
             this.panelMe.SuspendLayout();
@@ -80,18 +81,22 @@ namespace WindowAdminHome
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Priv_List
             // 
+            this.Priv_List.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Priv_List.BackgroundColor = System.Drawing.SystemColors.Control;
             this.Priv_List.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Priv_List.GridColor = System.Drawing.SystemColors.Control;
-            this.Priv_List.Location = new System.Drawing.Point(437, 103);
+            this.Priv_List.Location = new System.Drawing.Point(425, 106);
             this.Priv_List.Name = "Priv_List";
             this.Priv_List.RowHeadersWidth = 51;
             this.Priv_List.RowTemplate.Height = 24;
-            this.Priv_List.Size = new System.Drawing.Size(710, 420);
+            this.Priv_List.Size = new System.Drawing.Size(720, 413);
             this.Priv_List.TabIndex = 0;
             this.Priv_List.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Priv_List_CellContentClick);
             this.Priv_List.SelectionChanged += new System.EventHandler(this.Priv_List_SelectionChanged);
@@ -112,6 +117,8 @@ namespace WindowAdminHome
             // 
             // panelNhanVien
             // 
+            this.panelNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panelNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelNhanVien.Controls.Add(this.textBirth);
             this.panelNhanVien.Controls.Add(this.textVaiTro);
@@ -138,10 +145,19 @@ namespace WindowAdminHome
             this.panelNhanVien.Controls.Add(this.textPhone);
             this.panelNhanVien.Controls.Add(this.textAddr);
             this.panelNhanVien.Controls.Add(this.labelAddr);
-            this.panelNhanVien.Location = new System.Drawing.Point(3, 55);
+            this.panelNhanVien.Location = new System.Drawing.Point(0, 58);
+            this.panelNhanVien.MinimumSize = new System.Drawing.Size(411, 459);
             this.panelNhanVien.Name = "panelNhanVien";
             this.panelNhanVien.Size = new System.Drawing.Size(411, 459);
             this.panelNhanVien.TabIndex = 38;
+            this.panelNhanVien.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNhanVien_Paint);
+            // 
+            // textBirth
+            // 
+            this.textBirth.Location = new System.Drawing.Point(153, 126);
+            this.textBirth.Name = "textBirth";
+            this.textBirth.Size = new System.Drawing.Size(222, 22);
+            this.textBirth.TabIndex = 64;
             // 
             // textVaiTro
             // 
@@ -161,6 +177,8 @@ namespace WindowAdminHome
             // 
             // btDelete
             // 
+            this.btDelete.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btDelete.Location = new System.Drawing.Point(298, 414);
             this.btDelete.Name = "btDelete";
@@ -172,6 +190,8 @@ namespace WindowAdminHome
             // 
             // btInsert
             // 
+            this.btInsert.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btInsert.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btInsert.Location = new System.Drawing.Point(44, 414);
             this.btInsert.Name = "btInsert";
@@ -183,6 +203,8 @@ namespace WindowAdminHome
             // 
             // btUpdate
             // 
+            this.btUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btUpdate.Location = new System.Drawing.Point(170, 414);
             this.btUpdate.Name = "btUpdate";
@@ -390,6 +412,8 @@ namespace WindowAdminHome
             // 
             // panelMe
             // 
+            this.panelMe.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panelMe.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panelMe.Controls.Add(this.textBirthMe);
             this.panelMe.Controls.Add(this.button3);
@@ -398,13 +422,23 @@ namespace WindowAdminHome
             this.panelMe.Controls.Add(this.textPhoneMe);
             this.panelMe.Controls.Add(this.textAddrMe);
             this.panelMe.Controls.Add(this.labelAddrMe);
-            this.panelMe.Location = new System.Drawing.Point(3, 55);
+            this.panelMe.Location = new System.Drawing.Point(1, 55);
+            this.panelMe.MinimumSize = new System.Drawing.Size(411, 459);
             this.panelMe.Name = "panelMe";
             this.panelMe.Size = new System.Drawing.Size(411, 459);
             this.panelMe.TabIndex = 56;
             // 
+            // textBirthMe
+            // 
+            this.textBirthMe.Location = new System.Drawing.Point(152, 127);
+            this.textBirthMe.Name = "textBirthMe";
+            this.textBirthMe.Size = new System.Drawing.Size(222, 22);
+            this.textBirthMe.TabIndex = 63;
+            // 
             // button3
             // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Location = new System.Drawing.Point(170, 414);
             this.button3.Name = "button3";
@@ -442,6 +476,13 @@ namespace WindowAdminHome
             this.labelBirthMe.TabIndex = 27;
             this.labelBirthMe.Text = "Ngay Sinh";
             // 
+            // textPhoneMe
+            // 
+            this.textPhoneMe.Location = new System.Drawing.Point(152, 201);
+            this.textPhoneMe.Name = "textPhoneMe";
+            this.textPhoneMe.Size = new System.Drawing.Size(222, 22);
+            this.textPhoneMe.TabIndex = 30;
+            // 
             // textAddrMe
             // 
             this.textAddrMe.Location = new System.Drawing.Point(152, 166);
@@ -465,12 +506,13 @@ namespace WindowAdminHome
             // 
             // labelListStaff
             // 
-            this.labelListStaff.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelListStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.labelListStaff.AutoSize = true;
             this.labelListStaff.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
             this.labelListStaff.ForeColor = System.Drawing.Color.Black;
-            this.labelListStaff.Location = new System.Drawing.Point(645, 35);
+            this.labelListStaff.Location = new System.Drawing.Point(217, 29);
             this.labelListStaff.Name = "labelListStaff";
+            this.labelListStaff.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.labelListStaff.Size = new System.Drawing.Size(290, 32);
             this.labelListStaff.TabIndex = 40;
             this.labelListStaff.Text = "Danh sách nhân viên";
@@ -478,7 +520,8 @@ namespace WindowAdminHome
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel2.Controls.Add(this.labelListStaff);
+            this.panel2.Controls.Add(this.Priv_List);
+            this.panel2.Controls.Add(this.panel1);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -500,9 +543,10 @@ namespace WindowAdminHome
             // 
             // panel4
             // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(415, 49);
@@ -510,8 +554,8 @@ namespace WindowAdminHome
             // 
             // panel6
             // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel6.Controls.Add(this.btNhanVien);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel6.Location = new System.Drawing.Point(202, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(213, 49);
@@ -519,9 +563,9 @@ namespace WindowAdminHome
             // 
             // btNhanVien
             // 
+            this.btNhanVien.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btNhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btNhanVien.Location = new System.Drawing.Point(0, 0);
             this.btNhanVien.Name = "btNhanVien";
             this.btNhanVien.Size = new System.Drawing.Size(213, 49);
@@ -532,8 +576,8 @@ namespace WindowAdminHome
             // 
             // panel5
             // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel5.Controls.Add(this.btMe);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel5.Location = new System.Drawing.Point(0, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 49);
@@ -541,9 +585,9 @@ namespace WindowAdminHome
             // 
             // btMe
             // 
+            this.btMe.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btMe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btMe.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btMe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btMe.Location = new System.Drawing.Point(0, 0);
             this.btMe.Name = "btMe";
             this.btMe.Size = new System.Drawing.Size(200, 49);
@@ -552,26 +596,17 @@ namespace WindowAdminHome
             this.btMe.UseVisualStyleBackColor = false;
             this.btMe.Click += new System.EventHandler(this.btMe_Click);
             // 
-            // textBirthMe
+            // panel1
             // 
-            this.textBirthMe.Location = new System.Drawing.Point(152, 127);
-            this.textBirthMe.Name = "textBirthMe";
-            this.textBirthMe.Size = new System.Drawing.Size(222, 22);
-            this.textBirthMe.TabIndex = 63;
-            // 
-            // textPhoneMe
-            // 
-            this.textPhoneMe.Location = new System.Drawing.Point(152, 201);
-            this.textPhoneMe.Name = "textPhoneMe";
-            this.textPhoneMe.Size = new System.Drawing.Size(222, 22);
-            this.textPhoneMe.TabIndex = 30;
-            // 
-            // textBirth
-            // 
-            this.textBirth.Location = new System.Drawing.Point(153, 126);
-            this.textBirth.Name = "textBirth";
-            this.textBirth.Size = new System.Drawing.Size(222, 22);
-            this.textBirth.TabIndex = 64;
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.labelListStaff);
+            this.panel1.Location = new System.Drawing.Point(419, 0);
+            this.panel1.MinimumSize = new System.Drawing.Size(300, 60);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(736, 100);
+            this.panel1.TabIndex = 41;
             // 
             // listNhanVien
             // 
@@ -580,7 +615,6 @@ namespace WindowAdminHome
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(1159, 533);
             this.ControlBox = false;
-            this.Controls.Add(this.Priv_List);
             this.Controls.Add(this.panel2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -593,11 +627,12 @@ namespace WindowAdminHome
             this.panelMe.ResumeLayout(false);
             this.panelMe.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -646,5 +681,6 @@ namespace WindowAdminHome
         private System.Windows.Forms.DateTimePicker textBirthMe;
         private System.Windows.Forms.TextBox textPhoneMe;
         private System.Windows.Forms.DateTimePicker textBirth;
+        private System.Windows.Forms.Panel panel1;
     }
 }
