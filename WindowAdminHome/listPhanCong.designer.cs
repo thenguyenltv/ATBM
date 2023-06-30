@@ -32,6 +32,7 @@ namespace WindowAdminHome
             this.Priv_List = new System.Windows.Forms.DataGridView();
             this.labelMaNV = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.textTime = new System.Windows.Forms.DateTimePicker();
             this.textMaNV = new System.Windows.Forms.ComboBox();
             this.textMaDA = new System.Windows.Forms.ComboBox();
@@ -42,7 +43,6 @@ namespace WindowAdminHome
             this.labelMaDA = new System.Windows.Forms.Label();
             this.labelListAssignment = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Priv_List)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -50,6 +50,9 @@ namespace WindowAdminHome
             // 
             // Priv_List
             // 
+            this.Priv_List.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Priv_List.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Priv_List.BackgroundColor = System.Drawing.SystemColors.Control;
             this.Priv_List.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -93,6 +96,17 @@ namespace WindowAdminHome
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(438, 533);
             this.panel1.TabIndex = 38;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(64, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(281, 32);
+            this.label1.TabIndex = 42;
+            this.label1.Text = "Thao tác Chính sách";
             // 
             // textTime
             // 
@@ -199,17 +213,6 @@ namespace WindowAdminHome
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1159, 533);
             this.panel2.TabIndex = 41;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 16F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(64, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 32);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "Thao tác Chính sách";
             // 
             // listPhanCong
             // 

@@ -158,7 +158,8 @@ namespace WindowAdminHome
                     getEmps.Parameters.Add("MDA", textMaDA.Text);
                     getEmps.Parameters.Add("TAB", tab);
                     getEmps.ExecuteNonQuery();
-                    MessageBox.Show("Cap nhat thanh cong!");
+                    if(i == listText.Length - 1)
+                        MessageBox.Show("Cap nhat thanh cong!");
                     updateGrid();
                 }
             }

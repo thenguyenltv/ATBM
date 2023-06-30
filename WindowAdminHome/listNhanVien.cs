@@ -211,6 +211,7 @@ namespace WindowAdminHome
                 OracleDataReader reader = getEmps.ExecuteReader();
 
                 //Priv_List.Rows.Add("MaNV", TenNV, Phai, NgaySinh, DiaChi, SDT, Luong, PhuCap, VaiTro, MaNQL, PHG, LinhVuc, ChiNhanh, LabelQLNV);
+                Priv_List.Rows.Clear();
                 int rowIndex = 0;
                 while(reader.Read()){
                     rowIndex++;
@@ -457,6 +458,7 @@ namespace WindowAdminHome
                     getEmps.Parameters.Add("VAL", listText[i]);
                     getEmps.Parameters.Add("MA", username.Substring(2,4));//CHO ROLE KO PHAI LA NHANSU VA TAICHINH
                     //getEmps.Parameters.Add("MA", textMaNV.Text);//CHO ROLE NHANSU VA TAICHINH
+                    getEmps.Parameters.Add("CONCOL", "MANV");
                     getEmps.Parameters.Add("TAB", tab);
                     getEmps.ExecuteNonQuery();
                     updateGrid();
@@ -486,7 +488,7 @@ namespace WindowAdminHome
                 DataGridViewRow selectedRow = Priv_List.SelectedRows[0];
                 textBirthMe.Value = DateTime.Parse(selectedRow.Cells["NGAYSINH"].Value.ToString());
                 textAddrMe.Text = selectedRow.Cells["DIACHI"].Value.ToString();
-                textPhoneMe.Text = selectedRow.Cells["SODT"].Value.ToString();
+                textPhoneMe.Text = selectedRow.Cells["SDT"].Value.ToString();
             }
 
         }
